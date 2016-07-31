@@ -8,18 +8,21 @@ $bootstrap-sass-asset-helper: false !default;
 //
 //## Gray and brand colors for use across Bootstrap.
 
-$gray-base:              #000 !default;
-$gray-darker:            lighten($gray-base, 13.5%) !default; // #222
-$gray-dark:              lighten($gray-base, 20%) !default;   // #333
-$gray:                   lighten($gray-base, 33.5%) !default; // #555
-$gray-light:             lighten($gray-base, 46.7%) !default; // #777
-$gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
+$gray-base:              #BFC5C8 !default;
+$gray-darker:            #686D6F !default;
+$gray-dark:              lighten($gray-base, 20%) !default;   // edit
+$gray:                   #F2F8FB !default;
+$gray-light:             lighten($gray-base, 46.7%) !default; // edit
+$gray-lighter:           #F2F8FB !default;
 
-$brand-primary:         darken(#428bca, 6.5%) !default; // #337ab7
-$brand-success:         #5cb85c !default;
-$brand-info:            #5bc0de !default;
-$brand-warning:         #f0ad4e !default;
-$brand-danger:          #d9534f !default;
+$brand-primary:         #00B1FA !default;
+$brand-success:         #58E056 !default;
+$brand-info:            #07587C !default;
+$brand-warning:         #FFA049 !default;
+$brand-danger:          #F04D4D !default;
+
+$brand-dark:            #051E2B !default;
+$brand-light:           #B9E7FD !default;
 
 
 //== Scaffolding
@@ -29,12 +32,12 @@ $brand-danger:          #d9534f !default;
 //** Background color for `<body>`.
 $body-bg:               #fff !default;
 //** Global text color on `<body>`.
-$text-color:            $gray-dark !default;
+$text-color:            $brand-info !default;
 
 //** Global textual link color.
 $link-color:            $brand-primary !default;
 //** Link hover color set via `darken()` function.
-$link-hover-color:      darken($link-color, 15%) !default;
+$link-hover-color:      darken($link-color, 20%) !default;
 //** Link hover decoration.
 $link-hover-decoration: underline !default;
 
@@ -43,21 +46,22 @@ $link-hover-decoration: underline !default;
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-sans-serif:  "filson-pro", Helvetica, Arial, sans-serif !default;
+$font-family-sans-serif-heading:  "filson-soft", Helvetica, Arial, sans-serif !default;
 $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base:        $font-family-sans-serif !default;
 
-$font-size-base:          14px !default;
+$font-size-base:          15px !default;
 $font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
 $font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
 
 $font-size-h1:            floor(($font-size-base * 2.6)) !default; // ~36px
 $font-size-h2:            floor(($font-size-base * 2.15)) !default; // ~30px
-$font-size-h3:            ceil(($font-size-base * 1.7)) !default; // ~24px
+$font-size-h3:            ceil(($font-size-base * 1.73)) !default; // ~26px
 $font-size-h4:            ceil(($font-size-base * 1.25)) !default; // ~18px
-$font-size-h5:            $font-size-base !default;
+$font-size-h5:            ceil(($font-size-base * 1.3)) !default; // ~20px
 $font-size-h6:            ceil(($font-size-base * 0.85)) !default; // ~12px
 
 //** Unit-less `line-height` for use in components like buttons.
@@ -66,10 +70,10 @@ $line-height-base:        1.428571429 !default; // 20/14
 $line-height-computed:    floor(($font-size-base * $line-height-base)) !default; // ~20px
 
 //** By default, this inherits from the `<body>`.
-$headings-font-family:    inherit !default;
-$headings-font-weight:    500 !default;
+$headings-font-family:    $font-family-sans-serif-heading !default;
+$headings-font-weight:    700 !default;
 $headings-line-height:    1.1 !default;
-$headings-color:          inherit !default;
+$headings-color:          $brand-dark !default;
 
 
 //== Iconography
@@ -92,11 +96,14 @@ $icon-font-svg-id:        "glyphicons_halflingsregular" !default;
 //
 //## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
 
-$padding-base-vertical:     6px !default;
-$padding-base-horizontal:   12px !default;
+$padding-base-vertical:     5px !default;
+$padding-base-horizontal:   20px !default;
 
 $padding-large-vertical:    10px !default;
-$padding-large-horizontal:  16px !default;
+$padding-large-horizontal:  20px !default;
+
+$padding-xl-vertical:    20px !default;
+$padding-xl-horizontal:  40px !default;
 
 $padding-small-vertical:    5px !default;
 $padding-small-horizontal:  10px !default;
@@ -107,9 +114,9 @@ $padding-xs-horizontal:     5px !default;
 $line-height-large:         1.3333333 !default; // extra decimals for Win 8.1 Chrome
 $line-height-small:         1.5 !default;
 
-$border-radius-base:        4px !default;
-$border-radius-large:       6px !default;
-$border-radius-small:       3px !default;
+$border-radius-base:        7.5px !default;
+$border-radius-large:       15px !default;
+$border-radius-small:       3.25px !default;
 
 //** Global color for active items (e.g., navs or dropdowns).
 $component-active-color:    #fff !default;
@@ -147,11 +154,11 @@ $table-border-color:            #ddd !default;
 //
 //## For each of Bootstrap's buttons, define text, background and border color.
 
-$btn-font-weight:                normal !default;
+$btn-font-weight:                600 !default;
 
 $btn-default-color:              #333 !default;
 $btn-default-bg:                 #fff !default;
-$btn-default-border:             #ccc !default;
+$btn-default-border:             white !default;
 
 $btn-primary-color:              #fff !default;
 $btn-primary-bg:                 $brand-primary !default;
@@ -179,6 +186,16 @@ $btn-link-disabled-color:        $gray-light !default;
 $btn-border-radius-base:         $border-radius-base !default;
 $btn-border-radius-large:        $border-radius-large !default;
 $btn-border-radius-small:        $border-radius-small !default;
+
+// Custom Box shadow addition
+$btn-primary-shadow: 0px 1px 5px 0px rgba(2,96,136,0.63);
+$btn-success-shadow: 0px 1px 5px 0px rgba(41,106,40,0.63);
+$btn-info-shadow: 0px 1px 5px 0px rgba(5,60,84,0.63);
+$btn-warning-shadow: 0px 1px 5px 0px rgba(137,87,40,0.63);
+$btn-danger-shadow: 0px 1px 5px 0px rgba(143,45,45,0.63);
+
+// Custom Box shadow hover addition
+$btn-shadow-hover: inset 0px 0px 8px 2px rgba(0,0,0,0.29);
 
 
 //== Forms
@@ -329,7 +346,7 @@ $screen-md-max:              ($screen-lg-min - 1) !default;
 //** Number of columns in the grid.
 $grid-columns:              12 !default;
 //** Padding between columns. Gets divided in half for the left and right.
-$grid-gutter-width:         30px !default;
+$grid-gutter-width:         20px !default;
 // Navbar collapse
 //** Point at which the navbar becomes uncollapsed.
 $grid-float-breakpoint:     $screen-sm-min !default;
@@ -417,7 +434,6 @@ $navbar-inverse-brand-hover-bg:             transparent !default;
 $navbar-inverse-toggle-hover-bg:            #333 !default;
 $navbar-inverse-toggle-icon-bar-bg:         #fff !default;
 $navbar-inverse-toggle-border-color:        #333 !default;
-
 
 //== Navs
 //
@@ -872,3 +888,11 @@ $dl-horizontal-offset:        $component-offset-horizontal !default;
 $dl-horizontal-breakpoint:    $grid-float-breakpoint !default;
 //** Horizontal line color.
 $hr-border:                   $gray-lighter !default;
+
+//== Custom UI Transition Variables
+//
+//##
+
+// Default
+$default-transition: all 200ms ease;
+$default-text-transition: color 200ms ease;

@@ -3,35 +3,39 @@
 // Easily pump out default styles, as well as :hover, :focus, :active,
 // and disabled options for all buttons
 
-@mixin button-variant($color, $background, $border) {
+@mixin button-variant($color, $background, $shadow, $shadow-hover) {
   color: $color;
   background-color: $background;
-  border-color: $border;
+     border-radius: $btn-border-radius-base;
+    text-transform: uppercase;
+        transition: $default-transition;
+        box-shadow: $shadow;
+
 
   &:focus,
   &.focus {
     color: $color;
-    background-color: darken($background, 10%);
-        border-color: darken($border, 25%);
+    background-color: darken($background, 20%);
+    box-shadow: $shadow-hover;
   }
   &:hover {
     color: $color;
-    background-color: darken($background, 10%);
-        border-color: darken($border, 12%);
+    background-color: darken($background, 20%);
+    box-shadow: $shadow-hover;
   }
   &:active,
   &.active,
   .open > &.dropdown-toggle {
     color: $color;
-    background-color: darken($background, 10%);
-        border-color: darken($border, 12%);
+    background-color: darken($background, 20%);
+    box-shadow: $shadow-hover;
 
     &:hover,
     &:focus,
     &.focus {
       color: $color;
-      background-color: darken($background, 17%);
-          border-color: darken($border, 25%);
+      background-color: darken($background, 20%);
+      box-shadow: $shadow-hover;
     }
   }
   &:active,
@@ -46,7 +50,6 @@
     &:focus,
     &.focus {
       background-color: $background;
-          border-color: $border;
     }
   }
 
@@ -61,5 +64,4 @@
   padding: $padding-vertical $padding-horizontal;
   font-size: $font-size;
   line-height: $line-height;
-  border-radius: $border-radius;
 }

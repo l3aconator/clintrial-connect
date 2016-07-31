@@ -1,0 +1,197 @@
+.sidebar-nav {
+  width: $side-bar-width;
+  background: $brand-dark;
+  height: $side-bar-height;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: $side-bar-box-shadow;
+  
+  hr {
+    margin-left: $padding-base-horizontal;
+    margin-right: $padding-base-horizontal;
+    border-top: 2px solid darken($brand-dark, 20%);
+    border-radius: $border-radius-large;
+  }
+  
+  .sidebar-account-header {
+    
+    padding-top: 30px;
+    
+    .profile-img-box {
+      background: $brand-light;
+      width: $profile-img-dimension;
+      height: $profile-img-dimension;
+      margin-left: $padding-base-horizontal;
+      border-radius: $border-radius-large;
+      position: relative;
+      
+      &.notification,
+      &.notifications {
+        &:after {
+          content:'22';
+          width: 25px;
+          height: 25px;
+          border: 2px solid $brand-dark;
+          border-radius: $border-radius-large;
+          display: block;
+          background: $brand-danger;
+          position: absolute;
+          top: -8px;
+          right: -8px;
+          color: white;
+          font-weight: 700;
+          font-size: 12px;
+          text-align: center;
+          padding-top: 2px;
+          cursor: pointer;
+          
+        }
+      }
+      
+      &.empty {
+        cursor: pointer;
+        
+        &:before {
+          font-family: 'typicons';
+          font-style: normal;
+          font-weight: normal;
+          speak: none;
+          display: inline-block;
+          text-decoration: inherit;
+          width: 1em;
+          height: 1em;
+          font-size: 1em;
+          text-align: center;
+          -webkit-font-smoothing: antialiased;
+          font-smoothing: antialiased;
+          text-rendering: optimizeLegibility;
+          content: '\e0cf'; /* '' */
+          position: absolute;
+          top: 7px;
+          left: 11px;
+          color: darken($brand-light, 20%);
+          font-size: 2em;
+        }
+      }
+    }
+    
+    .account-name {
+      display: block;
+      color: $brand-light;
+      font-size: 1.25em;
+      padding-right: $padding-large-horizontal;
+    }
+    
+    .account-logout {
+      display: block;
+      color: $gray-darker;
+      transition: $default-transition;
+      
+      &:hover,
+      &:focus,
+      &:active {
+        text-decoration: none;
+        color: $brand-primary;
+      }
+    }
+  }
+  
+  .sidebar-profile {
+    
+    .sidebar-profile-bar {
+      
+      .progress {
+        height: 10px;
+        background: darken($brand-dark, 20%);
+        margin-bottom: $padding-large-vertical;
+      }
+      
+      .sidebar-profile-progress-label {
+        padding-top: 0;
+        margin-top: 0;
+        color: $gray-darker;
+        width: 100%;
+        display: block;
+        text-align: center;
+        font-size: 12px;
+        margin-bottom: $padding-large-vertical;
+      }
+    }
+  }
+  
+  .sidebar-nav-pad {
+    padding-left: $padding-large-horizontal;
+    padding-right: $padding-large-horizontal;
+  }
+  
+  .sidebar-nav-label {
+    color: white;
+    padding-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: 500;
+    padding-left: $padding-large-horizontal;
+  }
+  
+  .sidebar-nav-list {
+    margin: 0;
+    padding: 0;
+    
+    li {
+      list-style-type: none;
+      margin: 0;
+      width: 100%;
+      display: block;
+      position: relative;
+      
+      a {
+        padding-top: $padding-base-vertical;
+        padding-bottom: $padding-base-vertical;
+        display: block;
+        width: 100%;
+        padding-left: $padding-large-horizontal;
+        padding-right: $padding-large-horizontal;
+        color: $gray-darker;
+        transition: $default-transition;
+        
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+          background: darken($brand-dark, 20%);
+          text-decoration: none;
+          color: $brand-primary;
+          
+          &:after {
+            height: 100%;
+            width: 4px;
+            content: '';
+            background: $brand-primary;
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
+        }
+        
+        &.typcn {
+          &:before {
+            font-size: 1.75em;
+          }
+        }
+      }
+    }
+  }
+  
+  .sidebar-nav-trial-buttons {
+    margin-top: $padding-large-vertical * 4;
+    
+    button {
+      &:last-child {
+        margin-top: $padding-large-vertical;
+      }
+    }
+  }
+  
+}

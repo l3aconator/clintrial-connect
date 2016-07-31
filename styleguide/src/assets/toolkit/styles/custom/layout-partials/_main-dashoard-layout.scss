@@ -1,0 +1,82 @@
+.main-dashboard {
+    
+  .main-dashboard-nav {
+    a {
+      text-decoration: none;
+    }
+    
+    .main-dashboard-nav-display-icon {
+      display: block;
+      font-size: 15em;
+      text-align: center;
+      color: $brand-primary;
+      
+      &.typcn {
+        &:before {
+          text-shadow: 0px 1px 5px #00B1FA;
+        }
+      }
+    }
+    
+    .main-dashboard-nav-link {
+      color: $brand-info;
+      font-size: $font-size-h3;
+      font-weight: $headings-font-weight;
+      text-align: center;
+      display: block;
+      transition: $default-text-transition;
+      text-decoration: none;
+    }
+    
+    .dashboard-home-boxes {
+      
+      &:hover,
+      &:active,
+      &:focus {
+        
+        .main-dashboard-nav-display-icon {
+          color: white;
+          
+          &.typcn {
+            &:before {
+              text-shadow: 0px 1px 5px #036188;
+            }
+          }
+        }
+        
+        .main-dashboard-nav-link {
+          text-decoration: none;
+          color: darken($brand-info, 20%);        
+        }
+      }
+    }
+    
+  }
+  
+  .main-dashboard-secondary-nav {
+    
+    .main-dashboard-questions,
+    .main-dashboard-company-details {
+      margin-top: $padding-xl-vertical;
+    }
+    
+    .main-dashboard-nav-link-small {
+      color: $brand-info;
+      font-size: $font-size-h4;
+      font-weight: $headings-font-weight;
+      text-align: center;
+      display: block;
+      transition: $default-text-transition;
+      text-decoration: none;
+      
+      &:hover,
+      &:active,
+      &:focus {
+        text-decoration: none;
+        color: darken($brand-info, 20%);
+      }
+    }
+    
+  }
+  
+}

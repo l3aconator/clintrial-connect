@@ -1,0 +1,26 @@
+.app-content {
+  margin-left: $side-bar-width;
+  
+  .app-view-header {
+    width: 100%;
+    background: $brand-info;
+    
+    .app-view-title {
+      padding: $padding-base-horizontal;
+      margin: 0;
+      color: $brand-light;
+      text-transform: uppercase;
+      font-size: 20px;
+      letter-spacing: 0.1em;
+      font-weight: 500;
+    }
+  }
+  
+  .app-content-container {
+    margin-top: $padding-large-vertical * 4;
+    padding-left: $padding-base-horizontal;
+    padding-right: $padding-base-horizontal;
+    width: 100%;
+  }
+  
+}

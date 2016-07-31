@@ -1,0 +1,17 @@
+.light-gray-box {
+  @include content-boxes($padding-base-horizontal, $gray-lighter, $border-radius-large, $gray-base);
+}
+
+.dashboard-home-boxes {
+  @include content-boxes($padding-base-horizontal, white, $border-radius-large, $brand-primary);
+  transition: $default-transition;
+  margin-top: $padding-xl-vertical;
+  
+  &:hover,
+  &:active,
+  &:focus {
+    background: $brand-primary;
+    border-color: $brand-info;
+    box-shadow: $btn-shadow-hover;
+  }
+}

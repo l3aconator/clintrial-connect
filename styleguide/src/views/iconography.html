@@ -1,0 +1,25 @@
+---
+title: Iconography
+fabricator: true
+---
+
+<h1 data-f-toggle="labels">Iconography</h1>
+
+{{#each materials.iconography.items}}
+
+{{> f-item this}}
+
+{{/each}}
+
+{{#each toolkit.icons}}
+  <div class="row">
+	<div class="icons">
+	{{#each this}}
+      <div class="col-md-3">
+        <div style="text-align: center; font-size: 4em;" class="typcn typcn-{{this}}"></div>
+        <pre style="color: #07587C;">.typcn .{{@key}}</pre>
+      </div>
+	{{/each}}
+	</div>
+  </div>
+{{/each}}

@@ -1,8 +1,22 @@
 colors:
   primary:
-    Dark: "rgb(30, 30, 30)"
-    Light: "rgb(242, 242, 242)"
+    Primary: "#00B1FA"
+    Primary Hover: "#007EC7"
+    Info: "#07587C"
+    Info Hover: "#002549"
+    Light: "#B9E7FD"
+    Light Hover: "#86B4CA"
+    Dark: "#051E2B"
+    Dark Hover: "#000512"
   secondary:
-    Red: "rgb(201, 55, 6)"
-    Yellow: "rgb(252, 207, 80)"
-    Blue: "rgb(39, 102, 143)"
+    Success: "#58E056"
+    Success Hover: "#25AD23"
+    Warning: "#FFA049"
+    Warning Hover: "#CC6D16"
+    Danger: "#F04D4D"
+    Danger Hover: "#BD1A1A"
+  grey:
+    Light Grey: "#F2F8FB"
+    Base Grey: "#BFC5C8"
+    Dark Grey: "#686D6F"
+    Darkest Grey: "#434647"

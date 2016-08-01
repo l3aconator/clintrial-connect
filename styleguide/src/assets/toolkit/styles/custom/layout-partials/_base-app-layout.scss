@@ -5,6 +5,13 @@
     width: 100%;
     background: $brand-info;
     
+    .app-logo {
+      display: inline-block;
+      float: right;
+      padding: $padding-base-horizontal;
+      margin-top: $padding-large-vertical;
+    }
+    
     .app-view-title {
       padding: $padding-base-horizontal;
       margin: 0;
@@ -13,6 +20,13 @@
       font-size: 20px;
       letter-spacing: 0.1em;
       font-weight: 500;
+      display: inline-block;
+      
+      &.typcn {
+        &:before {
+          font-size: 1.75em;
+        }
+      }
     }
   }
   

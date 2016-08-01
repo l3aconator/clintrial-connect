@@ -3,14 +3,6 @@ layout: dashboard-main
 title: Dashboard
 ---
 
-<header class="app-view-header home-icon">
-  <h1 class="app-view-title typcn typcn-home">{{title}}</h1>
-  
-  <section class="app-view-subnav">
-
-  </section>
-</header>
-
 <section class="app-content-container main-dashboard">
   <div class="row main-dashboard-intro">
     <div class="col-md-8">
@@ -20,9 +12,11 @@ title: Dashboard
     <div class="col-md-4">
       <div class="light-gray-box">
         <h5 class="heading-info">Search for information about the trial</h5>
-        <form>
-          <input type="text" placeholder="How do I opt in…"/>
-          <input class="btn btn-success" type="submit" />
+        <form class="form-horizontal form-with-button">
+          <div class="form-group">
+            <input class="form-control" type="text" placeholder="How do I opt in…"/>
+            <input class="btn btn-success" type="submit" value="Search" />
+          </div>
         </form>
       </div>
     </div>
@@ -48,7 +42,7 @@ title: Dashboard
     <div class="col-md-4">
       <a href="#">
         <div class="dashboard-home-boxes">
-          <span class="typcn typcn-clipboard main-dashboard-nav-display-icon"></span>
+          <span class="typcn typcn-lightbulb main-dashboard-nav-display-icon"></span>
           <span class="main-dashboard-nav-link typcn-after typcn-chevron-right-after">Trial Education</span>
         </div>
       </a>
@@ -59,15 +53,17 @@ title: Dashboard
     <div class="col-md-8">
       <div class="light-gray-box main-dashboard-questions">
         <h5>Have a question about the trial? Ask it here!</h5>
-        <form>
-          <input type="text" placeholder="Placeholder text example…"/>
-          <input class="btn btn-success" type="submit" />
+        <form class="form-horizontal form-with-button">
+          <div class="form-group">
+            <input class="form-control" type="text" placeholder="Placeholder text example…"/>
+            <input class="btn btn-success" type="submit" />
+          </div>
         </form>
       </div>
     </div>
     <div class="col-md-4">
       <div class="light-gray-box main-dashboard-company-details">
-        <h5>PLACEHOLDER FOR IMAGE</h5>
+        <h5 style="text-align: center; font-size: 15px; height: 85px;">PLACEHOLDER FOR IMAGE</h5>
         <a href="#" class="main-dashboard-nav-link-small typcn-after typcn-chevron-right-after">Trial Education</a>
       </div>
     </div>

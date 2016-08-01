@@ -188,6 +188,7 @@ $btn-border-radius-large:        $border-radius-large !default;
 $btn-border-radius-small:        $border-radius-small !default;
 
 // Custom Box shadow addition
+$btn-default-shadow: 0px 1px 5px 0px rgba(134,134,134,0.63);
 $btn-primary-shadow: 0px 1px 5px 0px rgba(2,96,136,0.63);
 $btn-success-shadow: 0px 1px 5px 0px rgba(41,106,40,0.63);
 $btn-info-shadow: 0px 1px 5px 0px rgba(5,60,84,0.63);
@@ -208,9 +209,9 @@ $input-bg:                       #fff !default;
 $input-bg-disabled:              $gray-lighter !default;
 
 //** Text color for `<input>`s
-$input-color:                    $gray !default;
+$input-color:                    $gray-darker !default;
 //** `<input>` border color
-$input-border:                   #ccc !default;
+$input-border:                   $gray-base !default;
 
 // TODO: Rename `$input-border-radius` to `$input-border-radius-base` in v4
 //** Default `.form-control` border radius

@@ -9,14 +9,20 @@ title: Dashboard
       <h1>Good morning, Luke Skywalker!</h1>
       <p>A warm welcome message here about the trial, and the resources that the patient can use for the trial. Here is more writing to fill up the space to get a feel for how much one can write. Lorem ipsum dolor sit amet.</p>
     </div>
-    <div class="col-md-4">
+   <div class="col-md-4">
       <div class="light-gray-box">
-        <h5 class="heading-info">Search for information about the trial</h5>
+        <h5 class="heading-info">Looks like you are involved in more than one trial! Here’s the trial you are currently viewing:</h5>
+        <span class="change-trial-heading">Empire Rx: Arm Replacement</span>
         <form class="form-horizontal form-with-button">
-          <div class="form-group">
-            <input class="form-control" type="text" placeholder="How do I opt in…"/>
-            <input class="btn btn-success" type="submit" value="Search" />
-          </div>
+          <label for="changeTrial">Change Trial:</label>
+          <select class="form-control" name="changeTrial">
+            <option class="current-trial" checked>Empire Rx: Arm Replacement</option>
+            <option>Empire Rx: Lorem ipsum 1</option>
+            <option>Empire Rx: Lorem ipsum 2</option>
+            <option>Empire Rx: Lorem ipsum 3</option>
+            <option>Empire Rx: Lorem ipsum 4</option>
+            <option>Empire Rx: Lorem ipsum 5</option>
+          </select>
         </form>
       </div>
     </div>

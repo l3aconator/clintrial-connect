@@ -1,3 +1,14 @@
 .heading-info {
   color: $brand-info;
 }
+
+.change-trial-heading {
+  text-transform: uppercase;
+  font-size: $font-size-h4;
+  font-family: $font-family-sans-serif;
+  letter-spacing: .05em;
+  color: $brand-primary;
+  display: block;
+  padding-top: $padding-large-vertical;
+  padding-bottom: $padding-large-vertical;
+}

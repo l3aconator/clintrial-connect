@@ -19,8 +19,47 @@
 
 </head>
 <body>
-    
-    {% body %}
+  <section class="app-login-container login-dashboard">
+    <div class="container">
+      <div class="login-form-box">
+        <img src="{{baseurl}}/assets/toolkit/images/ClinTrialConnect.png" />
+        <div class="login-form">
+          <fieldset>
+            <form class="form-horizontal" method="get" action="{{baseurl}}/pages/dashboard-main.html">
+              <div class="form-group">
+                <div class="form-group">
+                  <label class="control-label" for="">Email</label>
+                  <input class="form-control" type="email" placeholder="Enter your email…"/>
+                </div>
+                <div class="form-group">
+                  <label class="control-label" for="">Password</label>
+                  <input class="form-control" type="text" placeholder="Enter your password…" />
+                </div>
+                <div class="form-group">
+                  <input class="btn btn-block btn-success" type="submit" value="login" />
+                  <div class="checkbox">
+                    <label class="control-label" for="">
+                      <input type="checkbox" /> Remember me
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </fieldset>
+          <div class="row">
+            <div class="login-form-link-box">
+              <div class="col-md-6">
+                <a class="login-form-link typcn-after typcn-chevron-right-after" href="#">Forgot username?</a>
+              </div>
+              <div class="col-md-6">
+                <a class="login-form-link typcn-after typcn-chevron-right-after" href="#">Forgot Password?</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- toolkit scripts -->
   <script src="{{baseurl}}/assets/toolkit/scripts/toolkit.js"></script>

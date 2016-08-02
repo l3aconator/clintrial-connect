@@ -3,15 +3,15 @@
 }
 
 .dashboard-home-boxes {
-  @include content-boxes($padding-base-horizontal, white, $border-radius-large, $brand-primary);
+  @include content-boxes($padding-base-horizontal, $brand-primary, $border-radius-large, $brand-info);
   transition: $default-transition;
-  margin-top: $padding-xl-vertical;
+  margin-top: $padding-xl-vertical * 2;
   
   &:hover,
   &:active,
   &:focus {
-    background: $brand-primary;
-    border-color: $brand-info;
+    background: $brand-info;
+    border-color: $brand-dark;
     box-shadow: $btn-shadow-hover;
   }
 }

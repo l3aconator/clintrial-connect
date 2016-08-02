@@ -7,20 +7,20 @@
     
     .main-dashboard-nav-display-icon {
       display: block;
-      font-size: 15em;
+      font-size: 10em;
       text-align: center;
-      color: $brand-primary;
+      color: white;
       
       &.typcn {
         &:before {
-          text-shadow: 0px 1px 5px #00B1FA;
+          text-shadow: 0px 1px 5px #036188;
         }
       }
     }
     
     .main-dashboard-nav-link {
       color: $brand-info;
-      font-size: $font-size-h3;
+      font-size: $font-size-h4;
       font-weight: $headings-font-weight;
       text-align: center;
       display: block;
@@ -39,7 +39,7 @@
           
           &.typcn {
             &:before {
-              text-shadow: 0px 1px 5px #036188;
+              text-shadow: 0px 1px 5px #051E2B;
             }
           }
         }
@@ -57,7 +57,7 @@
     
     .main-dashboard-questions,
     .main-dashboard-company-details {
-      margin-top: $padding-xl-vertical;
+      margin-top: $padding-xl-vertical * 2;
     }
     
     .main-dashboard-nav-link-small {

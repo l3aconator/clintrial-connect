@@ -109,7 +109,7 @@ gulp.task('scripts', (done) => {
 
 
 // images
-gulp.task('images', ['favicon'], () => {
+gulp.task('images', ['favicon', 'logo'], () => {
   return gulp.src(config.images.toolkit.src)
     .pipe(imagemin())
     .pipe(gulp.dest(config.images.toolkit.dest));
@@ -118,6 +118,11 @@ gulp.task('images', ['favicon'], () => {
 gulp.task('favicon', () => {
   return gulp.src('src/favicon.ico')
   .pipe(gulp.dest(config.dest));
+});
+
+gulp.task('logo', () => {
+  return gulp.src('src/ClinTrialConnect.png')
+  .pipe(gulp.dest(config.images.toolkit.dest));
 });
 
 

@@ -50,7 +50,10 @@
   </nav>
 
   <div class="sidebar-nav-trial-buttons sidebar-nav-pad">
-    <button class="btn btn-success btn-block">Join Trial</button>
-    <button class="btn btn-danger btn-block">Decline Trial</button>
+    <button class="btn btn-xs btn-success btn-block" data-toggle="modal" data-target="#joinModal">Join Trial</button>
+    <button class="btn btn-xs btn-danger btn-block" data-toggle="modal" data-target="#declineModal">Decline Trial</button>
   </div>
 </section>
+
+{{> join-modal}}
+{{> decline-modal}}

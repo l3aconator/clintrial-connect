@@ -49,6 +49,12 @@ const config = {
       watch: 'src/assets/toolkit/images/**/*',
     },
   },
+  fonts: {
+    toolkit: {
+      src: ['src/assets/toolkit/fonts/**/*'],
+      dest: 'dist/assets/toolkit/fonts',
+    },
+  },
   templates: {
     watch: 'src/**/*.{html,md,json,yml}',
   },
@@ -107,6 +113,17 @@ gulp.task('scripts', (done) => {
   });
 });
 
+// load bootstrap.min.js
+gulp.task('bs-script', () => {
+  return gulp.src('./src/assets/toolkit/scripts/bootstrap.min.js')
+  .pipe(gulp.dest(config.scripts.toolkit.dest));
+});
+
+// load fonts
+gulp.task('fonts', () => {
+  return gulp.src(config.fonts.toolkit.src)
+  .pipe(gulp.dest(config.fonts.toolkit.dest));
+});
 
 // images
 gulp.task('images', ['favicon', 'logo'], () => {
@@ -170,6 +187,8 @@ gulp.task('default', ['clean'], () => {
     'styles',
     'scripts',
     'images',
+    'bs-script',
+    'fonts',
     'assembler',
   ];
 

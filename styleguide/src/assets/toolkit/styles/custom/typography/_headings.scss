@@ -9,6 +9,12 @@
   letter-spacing: .05em;
   color: $brand-primary;
   display: block;
-  padding-top: $padding-large-vertical;
+  padding-top: $padding-base-vertical;
   padding-bottom: $padding-large-vertical;
+}
+
+.opt-in-choice {
+  display: block;
+  color: $brand-warning;
+  padding-top: $padding-base-vertical;
 }

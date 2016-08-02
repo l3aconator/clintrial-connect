@@ -26,7 +26,7 @@
   <section class="app-content">
     <header class="app-view-header home-icon">
       <h1 class="app-view-title typcn typcn-{{icon}}">{{title}}</h1>
-      <img class="app-logo" src="/assets/toolkit/images/ClinTrialConnect.png" />
+      <img class="app-logo" src="{{baseurl}}/assets/toolkit/images/ClinTrialConnect.png" />
       <section class="app-view-subnav">
       </section>
     </header>
@@ -36,7 +36,7 @@
     <section class="app-content-container">
       <section class="row media-view-container">
         
-        <h3>{{title}} Resources</h3>
+        <h3>{{resourceTitle}}</h3>
         
         <!-- PDF Template -->
         <div class="col-md-4">
@@ -318,8 +318,8 @@
   </section>
 
   <!-- toolkit scripts -->
-  <script src="/assets/toolkit/scripts/toolkit.js"></script>
-  <script src="/assets/toolkit/scripts/bootstrap.min.js"></script>
+  <script src="{{baseurl}}/assets/toolkit/scripts/toolkit.js"></script>
+  <script src="{{baseurl}}/assets/toolkit/scripts/bootstrap.min.js"></script>
   <!-- /toolkit scripts -->
 
 </body>

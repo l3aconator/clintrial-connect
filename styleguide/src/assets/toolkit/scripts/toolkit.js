@@ -16,3 +16,13 @@ $('#joinModal').on('shown.bs.modal', function () {
 $('#declineModal').on('shown.bs.modal', function () {
 
 });
+
+// forgotPasswordModal
+$('#forgotPasswordModal').on('shown.bs.modal', function () {
+
+});
+
+// forgotUsernameModal
+$('#forgotUsernameModal').on('shown.bs.modal', function () {
+
+});

@@ -8,7 +8,7 @@
 
   <title>{{title}}</title>
   
-  <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+  <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
   
   <!-- toolkit styles -->
   <link rel="stylesheet" href="{{baseurl}}/assets/toolkit/styles/toolkit.css">
@@ -50,11 +50,15 @@
           <div class="row">
             <div class="login-form-link-box">
               <div class="col-md-6">
-                <a class="login-form-link typcn-after typcn-chevron-right-after" href="#">Forgot username?</a>
+                <a class="login-form-link typcn-after typcn-chevron-right-after" href="#" data-toggle="modal" data-target="#forgotUsernameModal">Forgot username?</a>
               </div>
+              {{> forgot-password-modal }}
+              
               <div class="col-md-6">
-                <a class="login-form-link typcn-after typcn-chevron-right-after" href="#">Forgot Password?</a>
+                <a class="login-form-link typcn-after typcn-chevron-right-after" href="#" data-toggle="modal" data-target="#forgotPasswordModal">Forgot password?</a>
               </div>
+              {{> forgot-username-modal }}
+              
             </div>
           </div>
         </div>
@@ -63,7 +67,7 @@
       <div class="registration-form-box">
         <div class="registration-form">
           <h4>Need to register?</h4>
-          <a class="btn btn-primary btn-block typcn-after typcn-chevron-right-after" href="#">Register now</a>
+          <a class="btn btn-primary btn-block typcn-after typcn-chevron-right-after" href="{{baseurl}}/pages/dashboard-register.html">Register now</a>
         </div>
       </div>
     </div>

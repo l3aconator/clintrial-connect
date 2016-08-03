@@ -4,7 +4,7 @@
   height: 100vh;
   
   .login-form-box {
-    padding-top: 10%;
+    padding-top: 5%;
     width: 325px;
     margin-left: auto;
     margin-right: auto;
@@ -24,7 +24,8 @@
         margin-left: -10px;
         margin-right: -10px;
       }
-
+      
+      .checkbox, 
       .control-label {
         color: $brand-light;
       }
@@ -47,6 +48,25 @@
           text-decoration: none;
           color: darken($gray-base, 20%);
         }
+      }
+    }
+  }
+  
+  .registration-form-box {
+    width: 325px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: $padding-xl-vertical;
+    
+    
+    .registration-form {
+      background: $brand-info;
+      border-radius: $border-radius-large;
+      padding: $padding-base-horizontal;
+      
+      h4 {
+        margin-top: 0;
+        color: $brand-light;
       }
     }
   }

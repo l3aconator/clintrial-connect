@@ -123,7 +123,7 @@ output {
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
   border: 1px solid $input-border;
   border-radius: $input-border-radius; // Note: This has no effect on <select>s in some browsers, due to the limited stylability of <select>s in CSS.
-  @include box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
+  box-shadow: $form-inset-color;
   @include transition(border-color ease-in-out .15s, box-shadow ease-in-out .15s);
 
   // Customize the `:focus` state to imitate native WebKit styles.
@@ -230,19 +230,73 @@ input[type="search"] {
 
   label {
     min-height: $line-height-computed; // Ensure the input doesn't jump when there is no text
-    padding-left: 20px;
+    padding-left: 30px;
     margin-bottom: 0;
     font-weight: normal;
     cursor: pointer;
+    
+    .checkbox-box,
+    .radio-box {
+      
+      &:before {
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-radius: $border-radius-small;
+        border: 1px solid $brand-danger;
+        box-shadow: $btn-danger-shadow;
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-family: 'typicons';
+        font-style: normal;
+        font-weight: normal;
+        speak: none;
+        display: inline-block;
+        text-decoration: inherit;
+        font-size: 1em;
+        text-align: center;
+        -webkit-font-smoothing: antialiased;
+        font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+        margin-right: $padding-xs-horizontal;
+        content: '\e122'; /* '' */
+        color: $brand-danger;
+        transition: $default-transition;
+        box-shadow: $form-inset-color;
+      }
+    }
+    
+    .radio-box {
+      
+      &:before {
+        border-radius: 100%;
+      }
+    }
   }
 }
+
+input[type="checkbox"]:checked,
+input[type="radio"]:checked {
+  + .checkbox-box,
+  + .radio-box {
+    &:before {
+      border: 1px solid $brand-success;
+      box-shadow: $btn-success-shadow;
+      content: '\e11e'; /* '' */
+      color: $brand-success;
+    } 
+  }
+}
+
 .radio input[type="radio"],
 .radio-inline input[type="radio"],
 .checkbox input[type="checkbox"],
 .checkbox-inline input[type="checkbox"] {
   position: absolute;
   margin-left: -20px;
-  margin-top: 4px \9;
+  margin-top: 4px \9; 
+  left: -9999999px;
 }
 
 .radio + .radio,

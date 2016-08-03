@@ -5,7 +5,119 @@ icon: mail
 ---
 
 <section class="app-content-container share-dashboard">
-  <h1>Share</h1>
+  <div class="row main-dashboard-intro">
+    <div class="col-md-7">
+      <h1>Share resources with friends and family</h1>
+      <p>You have the ability to share all of the content within this tool to friends, family, loved ones, well really anyone you want to know about this particular clinical trial. It’s important for others to know what is going on and encourage you to share it. Simply enter their name and email. They will recieve access to the same educational resources you have.</p>
+    </div>
+   <div class="col-md-5">
+      <div class="light-gray-box">
+        <h5 class="heading-info">Looks like you have more than one clinical study available! Here’s the trial you are currently viewing:</h5>
+        <span class="opt-in-choice typcn typcn-warning">You have <strong>opted out</strong> of this trial</span>
+        <span class="change-trial-heading">Empire Rx: Arm Replacement</span>
+        <form class="form-horizontal form-with-button">
+          <label for="changeTrial">Change Trial:</label>
+          <select class="form-control" name="changeTrial">
+            <option class="current-trial" checked>Empire Rx: Arm Replacement</option>
+            <option>Empire Rx: Lorem ipsum 1</option>
+            <option>Empire Rx: Lorem ipsum 2</option>
+            <option>Empire Rx: Lorem ipsum 3</option>
+            <option>Empire Rx: Lorem ipsum 4</option>
+            <option>Empire Rx: Lorem ipsum 5</option>
+          </select>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <section class="dashboard-share-form">
+    <div class="dashboard-share-box">
+      <h3 class="text-white">Share content</h3>
+      <form>
+        <div class="row">
+          <div class="col-md-6">
+            <label class="label-white-color">First name</label>
+            <input class="form-control input-lg" type="text" placeholder="Enter first name…" />
+          </div>
+          <div class="col-md-6">
+            <label class="label-white-color">Last name</label>
+            <input class="form-control input-lg" type="text" placeholder="Enter last name…" />
+          </div>
+        </div>
+        <label class="label-white-color">Email you wish to share with</label>
+        <input class="form-control input-lg" type="email" placeholder="Enter email…" />
+        <input class="btn btn-success" type="submt" value="share" />
+        <button class="btn btn-danger">Clear form</button>
+      </form>
+    </div>
+  </section>
+  
+  <section class="dashboard-already-shared">
+    
+    <h3>People you’ve shared with already</h3>
+    
+    <div class="dashboard-already-shared-box table-white-box">
+      <table class="table table-striped table-responsive already-shared-table">
+        <thead class="dark">
+          <th class="first-name">First name</th>
+          <th class="last-name">Last name</th>
+          <th class="email">Email</th>
+          <th class="edit-row"></th>
+        </thead>
+        <tbody>
+          <tr class="already-shared-row">
+            <td class="first-name">Leia</td>
+            <td class="last-name">Organa</td>
+            <td class="email">leiaorgana@rebelbase.com</td>
+            <td class="edit-row">
+              <button class="btn btn-success btn-xs">Resend</button>
+              <button class="btn btn-danger btn-xs btn-icon typcn typcn-times"></button>
+            </td>
+          </tr>
+          <tr class="already-shared-row">
+            <td class="first-name">Leia</td>
+            <td class="last-name">Organa</td>
+            <td class="email">leiaorgana@rebelbase.com</td>
+            <td class="edit-row">
+              <button class="btn btn-success btn-xs">Resend</button>
+              <button class="btn btn-danger btn-xs btn-icon typcn typcn-times"></button>
+            </td>
+          </tr>
+          <tr class="already-shared-row">
+            <td class="first-name">Leia</td>
+            <td class="last-name">Organa</td>
+            <td class="email">leiaorgana@rebelbase.com</td>
+            <td class="edit-row">
+              <button class="btn btn-success btn-xs">Resend</button>
+              <button class="btn btn-danger btn-xs btn-icon typcn typcn-times"></button>
+            </td>
+          </tr>
+          <tr class="already-shared-row">
+            <td class="first-name">Leia</td>
+            <td class="last-name">Organa</td>
+            <td class="email">leiaorgana@rebelbase.com</td>
+            <td class="edit-row">
+              <button class="btn btn-success btn-xs">Resend</button>
+              <button class="btn btn-danger btn-xs btn-icon typcn typcn-times"></button>
+            </td>
+          </tr>
+          <tr class="already-shared-row">
+            <td class="first-name">Leia</td>
+            <td class="last-name">Organa</td>
+            <td class="email">leiaorgana@rebelbase.com</td>
+            <td class="edit-row">
+              <button class="btn btn-success btn-xs">Resend</button>
+              <button class="btn btn-danger btn-xs btn-icon typcn typcn-times"></button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    
+    </div>
+  </section>
+  
+  
+  
 </section>
 
 <!--IGNORE, FAKING ACTIVE PAGE SELECTION-->

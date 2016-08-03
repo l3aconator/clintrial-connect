@@ -10,3 +10,14 @@
     }
   }
 }
+
+@mixin label-color-variant($color) {
+  color: $color;
+
+  &[href] {
+    &:hover,
+    &:focus {
+      background-color: darken($color, 10%);
+    }
+  }
+}

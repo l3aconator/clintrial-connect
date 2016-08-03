@@ -64,3 +64,43 @@ a.label {
 .label-danger {
   @include label-variant($label-danger-bg);
 }
+
+
+// Text color only for forms
+.label-default-color {
+  @include label-color-variant($gray-base);
+}
+
+.label-primary-color {
+  @include label-color-variant($brand-primary);
+}
+
+.label-success-color {
+  @include label-color-variant($brand-success);
+}
+
+.label-info-color {
+  @include label-color-variant($brand-info);
+}
+
+.label-warning-color {
+  @include label-color-variant($brand-warning);
+}
+
+.label-danger-color {
+  @include label-color-variant($brand-danger);
+}
+
+.label-dark-color {
+  @include label-color-variant($brand-dark);
+}
+
+.label-light-color {
+  @include label-color-variant($brand-light);
+}
+
+.label-white-color {
+  @include label-color-variant(white);
+}
+
+

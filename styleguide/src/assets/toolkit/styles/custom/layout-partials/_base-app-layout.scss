@@ -1,5 +1,6 @@
 .app-content {
   margin-left: $side-bar-width;
+  margin-bottom: 20px;
   
   .app-view-header {
     width: 100%;
@@ -35,6 +36,11 @@
     padding-left: $padding-base-horizontal;
     padding-right: $padding-base-horizontal;
     width: 100%;
+    
+    &.no-marg-cont {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
   }
   
 }

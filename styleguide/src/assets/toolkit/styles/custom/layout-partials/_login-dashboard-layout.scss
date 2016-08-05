@@ -16,32 +16,26 @@
     }
 
     .login-form {
-      padding: $padding-xl-horizontal;
+      padding: $padding-large-horizontal;
       background: $brand-info;
       border-radius: $border-radius-large;
       
-      .form-group {
-        margin-left: -10px;
-        margin-right: -10px;
-      }
-      
-      .checkbox, 
-      .control-label {
+      .checkbox {
         color: $brand-light;
       }
       
       .login-form-link-box {
         border-top: 1px solid $brand-dark;
         border-radius: $border-radius-large;
-        margin-left: -10px;
-        margin-right: -10px;
+        margin-left: $padding-small-horizontal;
+        margin-right: $padding-small-horizontal;
       }
       
       .login-form-link {
         font-size: 12px;
         color: $gray-base;
         display: block;
-        padding-top: $padding-small-horizontal;
+        margin-top: $padding-small-horizontal;
         transition: $default-text-transition;
         
         &:hover {

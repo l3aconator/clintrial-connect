@@ -25,26 +25,29 @@
         <img src="{{baseurl}}/assets/toolkit/images/ClinTrialConnect.png" />
         <div class="login-form">
           <fieldset>
-            <form class="form-horizontal" method="get" action="{{baseurl}}/pages/dashboard-main.html">
+            <form method="get" action="{{baseurl}}/pages/dashboard-main.html">
+              
               <div class="form-group">
-                <div class="form-group">
-                  <label class="control-label" for="">Email</label>
-                  <input class="form-control" type="email" placeholder="Enter your email…"/>
-                </div>
-                <div class="form-group">
-                  <label class="control-label" for="">Password</label>
-                  <input class="form-control" type="text" placeholder="Enter your password…" />
-                </div>
-                <div class="form-group">
-                  <input class="btn btn-block btn-success" type="submit" value="login" />
-                  <div class="checkbox">
-                    <label for="checkbox-test">
-                      <input  id ="checkbox-test" type="checkbox" /> Remember me
-                      <span class="checkbox-box"></span>
-                    </label>
-                  </div>
-                </div>
+                <label class="control-label label-light-color" for="">Email</label>
+                <input class="form-control" type="email" placeholder="Enter your email…"/>
               </div>
+              
+              <div class="form-group">
+                <label class="control-label label-light-color" for="">Password</label>
+                <input class="form-control" type="text" placeholder="Enter your password…" />
+              </div>
+              
+              <div class="form-group">
+                <input class="btn btn-block btn-success" type="submit" value="login" />
+              </div>
+
+              <div class="checkbox">
+                <label for="checkbox-test">
+                  <input  id ="checkbox-test" type="checkbox" /> Remember me
+                  <span class="checkbox-box"></span>
+                </label>
+              </div>
+              
             </form>
           </fieldset>
           <div class="row">

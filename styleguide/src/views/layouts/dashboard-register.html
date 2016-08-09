@@ -26,6 +26,7 @@
         <img src="{{baseurl}}/assets/toolkit/images/ClinTrialConnect.png" />
         <div class="register-form">
           <h3 class="text-center text-white">Register for ClinTrial Connect</h3>
+          <p class="text-white text-center">Welcome to ClinTrial Connect. Before accessing your personalized dashboard and resources, please register for an account below. We need the following information to create an account and find the clinical research sites closest to you.</p>
           <fieldset>
             <form method="get" action="{{baseurl}}/pages/dashboard-main.html">
               
@@ -33,15 +34,15 @@
               
               <div class="form-group">
                 <label class="label-light-color">Name or Nickname*</label>
-                <input class="form-control" placeholder="Enter name…" />
+                <input class="form-control" data-toggle="tooltip" data-placement="right" title="Enter the name you would like associated with your account. You may change this at anytime in the account dashboard." placeholder="Enter name…" />
               </div>
               <div class="form-group">
                 <label class="label-light-color">Email*</label>
-                <input class="form-control" placeholder="Enter email…" />
+                <input class="form-control" data-toggle="tooltip" data-placement="right" title="Enter the email you received the ClinTrial Connect invitation from. This is important, you're account won't be created without it." placeholder="Enter email…" />
               </div>
               <div class="form-group">
                 <label class="label-light-color">Country*</label>
-                <select class="form-control">
+                <select class="form-control" data-toggle="tooltip" data-placement="right" title="Select the country you reside in. We need this to find research sites closest to you.">
                   <option value="AF">Afghanistan</option>
                   <option value="AX">Åland Islands</option>
                   <option value="AL">Albania</option>
@@ -296,19 +297,19 @@
               
               <div class="form-group">
                 <label class="label-light-color">City*</label>
-                <input class="form-control" placeholder="Enter city…" />
+                <input class="form-control" data-toggle="tooltip" data-placement="right" title="Enter the city that you reside in to help find the research site locations closest to you.  " placeholder="Enter city…" />
               </div>
               
               <h6 class="text-white">These fields aren't required.</h6>
               
               <div class="form-group">
                 <label class="label-light-color">Address</label>
-                <input class="form-control" placeholder="Enter address…" />
+                <input class="form-control" data-toggle="tooltip" data-placement="right" title="Enter the address you reside at. This field is not required, but would help us narrow down the closest research site to you." placeholder="Enter address…" />
               </div>
               
               <div class="form-group">
                 <label class="label-light-color">State</label>
-                <select class="form-control">
+                <select class="form-control" data-toggle="tooltip" data-placement="right" title="Select the state you reside in. This field is not required, but would help us narrow down the closest research site to you.">
                   <option value="AL">Alabama</option>
                   <option value="AK">Alaska</option>
                   <option value="AZ">Arizona</option>
@@ -371,7 +372,7 @@
               
               <div class="form-group">
                 <label class="label-light-color">Zipcode</label>
-                <input class="form-control" placeholder="96050…" />
+                <input class="form-control" data-toggle="tooltip" data-placement="right" title="Enter the zipcode you reside in. This field is not required, but would help us narrow down the closest research site to you." placeholder="96050…" />
               </div>
               
               
@@ -407,6 +408,8 @@
       </div>
     </div>
   </section>
+  
+  {{> footer-center}}
 
   <!-- toolkit scripts -->
   <script src="{{baseurl}}/assets/toolkit/scripts/toolkit.js"></script>

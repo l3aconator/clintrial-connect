@@ -1,0 +1,24 @@
+.app-policy-container {
+  width: 100%;
+  
+  .policy-form-box {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5%;
+  }
+  
+  img {
+      display: block;
+      width: 325px;
+      padding: $padding-xl-horizontal;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .policy-content {
+      background: $brand-info;
+      border-radius: $border-radius-large;
+      padding: $padding-base-horizontal;
+  }
+}

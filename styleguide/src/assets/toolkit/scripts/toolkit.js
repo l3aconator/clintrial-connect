@@ -27,6 +27,12 @@ $('#forgotUsernameModal').on('shown.bs.modal', function () {
 
 });
 
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
+
+// Document page filter
 $('.js-filter-item').on('click', function(){
   var categoryType = $(this).data('category');
   $('.js-filter-item').removeClass('active');

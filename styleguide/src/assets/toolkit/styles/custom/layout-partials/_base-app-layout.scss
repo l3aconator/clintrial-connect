@@ -10,6 +10,10 @@
     width: 100%;
     background: $brand-info;
     
+    .row {
+      margin-right: 0;
+    }
+    
     .app-logo {
       display: inline-block;
       float: right;
@@ -18,7 +22,7 @@
     }
     
     .app-view-title {
-      padding: $padding-base-horizontal;
+      padding-left: $padding-base-horizontal;
       margin: 0;
       color: $brand-light;
       text-transform: uppercase;
@@ -26,6 +30,8 @@
       letter-spacing: 0.1em;
       font-weight: 500;
       display: inline-block;
+      margin-top: $padding-base-horizontal;
+      margin-bottom: $padding-base-horizontal;
       
       &.typcn {
         &:before {
@@ -46,5 +52,34 @@
       margin-bottom: 0;
     }
   }
+}
+
+.trial-details {
   
+  .trial-details-logo {
+  
+    .sponsored-by {
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      font-size: 12px;
+      margin-top: $padding-large-vertical;
+    }
+
+    .company-logo {
+      width: 100%;
+      margin-bottom: $padding-large-vertical;
+    }
+  }
+}
+
+.header-select-box {
+  margin-right: $padding-base-horizontal;
+  margin-left: $padding-base-horizontal;
+  margin-top: $padding-base-horizontal;
+  margin-bottom: $padding-base-horizontal;
+  text-align: right;
+  
+  label {
+    margin-right: $padding-base-horizontal;
+  }
 }

@@ -1,0 +1,41 @@
+---
+layout: dashboard-questions
+title: Research site questions
+icon: message
+---
+
+<section class="app-content-container questions-dashboard">
+   <div class="row main-dashboard-intro">
+    <div class="col-md-6">
+      <h1>Ask the research site questions</h1>
+      <p>Something about this feature. lorem ipsum dolor sit amet. Something about this feature. lorem ipsum dolor sit amet. Something about this feature. lorem ipsum dolor sit amet. Something about this feature. lorem ipsum dolor sit amet. Something about this feature. lorem ipsum dolor sit amet.</p>
+    </div>
+   {{> trial-details}}
+  </div>
+  
+  <section class="dashboard-question-form">
+    <div class="dashboard-question-box">
+      <h3 class="text-white">Ask a question</h3>
+      <form method="" action="">
+        <label class="label-white-color">Research site question</label>
+        <div class="row">
+          <div class="col-md-9">
+            <input class="form-control input-lg" type="text" placeholder="Enter your question…" />
+          </div>
+          <div class="col-md-3">
+            <input class="btn btn-success btn-lg btn-block typcn typcn-mail" type="submit" value="Submit" />
+          </div>
+        </div>
+        
+      </form>
+    </div>
+  </section>
+</section>
+
+<!--IGNORE, FAKING ACTIVE PAGE SELECTION-->
+<script>
+  $(document).ready(function(){
+    $('.sidebar-nav-list a').removeClass('active');
+    $('.sidebar-nav-list li:nth-child(4) a').addClass('active');
+  });
+</script>

@@ -8,6 +8,10 @@
   left: 0;
   box-shadow: $side-bar-box-shadow;
   
+  .app-logo {
+    margin-bottom: $padding-base-horizontal;
+  }
+  
   hr {
     margin-left: $padding-base-horizontal;
     margin-right: $padding-base-horizontal;
@@ -19,63 +23,63 @@
     
     padding-top: 30px;
     
-    .profile-img-box {
-      background: $brand-light;
-      width: $profile-img-dimension;
-      height: $profile-img-dimension;
-      margin-left: $padding-base-horizontal;
-      border-radius: $border-radius-large;
-      position: relative;
-      
-      &.has-notification,
-      &.has-notifications {
-        &:after {
-          content:'22';
-          width: 25px;
-          height: 25px;
-          border: 2px solid $brand-dark;
-          border-radius: $border-radius-large;
-          display: block;
-          background: $brand-danger;
-          position: absolute;
-          top: -8px;
-          right: -8px;
-          color: white;
-          font-weight: 700;
-          font-size: 12px;
-          text-align: center;
-          padding-top: 2px;
-          cursor: pointer;
-          
-        }
-      }
-      
-      &.empty {
-        cursor: pointer;
-        
-        &:before {
-          font-family: 'typicons';
-          font-style: normal;
-          font-weight: normal;
-          speak: none;
-          display: inline-block;
-          text-decoration: inherit;
-          width: 1em;
-          height: 1em;
-          font-size: 1em;
-          text-align: center;
-          -webkit-font-smoothing: antialiased;
-          font-smoothing: antialiased;
-          text-rendering: optimizeLegibility;
-          content: '\e0cf'; /* '' */
-          position: absolute;
-          top: 7px;
-          left: 11px;
-          color: darken($brand-light, 20%);
-          font-size: 2em;
-        }
-      }
-    }
+//    .profile-img-box {
+//      background: $brand-light;
+//      width: $profile-img-dimension;
+//      height: $profile-img-dimension;
+//      margin-left: $padding-base-horizontal;
+//      border-radius: $border-radius-large;
+//      position: relative;
+//      
+//      &.has-notification,
+//      &.has-notifications {
+//        &:after {
+//          content:'22';
+//          width: 25px;
+//          height: 25px;
+//          border: 2px solid $brand-dark;
+//          border-radius: $border-radius-large;
+//          display: block;
+//          background: $brand-danger;
+//          position: absolute;
+//          top: -8px;
+//          right: -8px;
+//          color: white;
+//          font-weight: 700;
+//          font-size: 12px;
+//          text-align: center;
+//          padding-top: 2px;
+//          cursor: pointer;
+//          
+//        }
+//      }
+//      
+//      &.empty {
+//        cursor: pointer;
+//        
+//        &:before {
+//          font-family: 'typicons';
+//          font-style: normal;
+//          font-weight: normal;
+//          speak: none;
+//          display: inline-block;
+//          text-decoration: inherit;
+//          width: 1em;
+//          height: 1em;
+//          font-size: 1em;
+//          text-align: center;
+//          -webkit-font-smoothing: antialiased;
+//          font-smoothing: antialiased;
+//          text-rendering: optimizeLegibility;
+//          content: '\e0cf'; /* '' */
+//          position: absolute;
+//          top: 7px;
+//          left: 11px;
+//          color: darken($brand-light, 20%);
+//          font-size: 2em;
+//        }
+//      }
+//    }
     
     .account-name {
       a {
@@ -83,6 +87,7 @@
         color: $brand-light;
         font-size: 1.25em;
         padding-right: $padding-large-horizontal;
+        padding-left: $padding-large-horizontal;
         
         &:hover {
           text-decoration: none;
@@ -95,6 +100,8 @@
       display: block;
       color: $gray-darker;
       transition: $default-transition;
+      padding-right: $padding-large-horizontal;
+      padding-left: $padding-large-horizontal;
       
       &:hover,
       &:focus,

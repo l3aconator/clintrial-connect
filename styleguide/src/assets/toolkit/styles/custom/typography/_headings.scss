@@ -4,17 +4,22 @@
 
 .change-trial-heading {
   text-transform: uppercase;
-  font-size: $font-size-h4;
+  font-size: $font-size-h5;
   font-family: $font-family-sans-serif;
   letter-spacing: .05em;
   color: $brand-primary;
   display: block;
   padding-top: $padding-base-vertical;
-  padding-bottom: $padding-large-vertical;
 }
 
-.opt-in-choice {
-  display: block;
-  color: $brand-warning;
-  padding-top: $padding-base-vertical;
-}
+//.not-interested {
+//  display: block;
+//  color: $brand-warning;
+//  padding-top: $padding-base-vertical;
+//}
+//
+//.interested {
+//  display: block;
+//  color: $brand-success;
+//  padding-top: $padding-base-vertical;
+//}

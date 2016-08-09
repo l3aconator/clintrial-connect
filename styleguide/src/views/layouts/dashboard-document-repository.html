@@ -25,8 +25,23 @@
   
   <section class="app-content">
     <header class="app-view-header home-icon">
-      <h1 class="app-view-title typcn typcn-{{icon}}">{{title}}</h1>
-      <img class="app-logo" src="{{baseurl}}/assets/toolkit/images/ClinTrialConnect.png" />
+      <div class="row">
+        <div class="col-md-7">
+          <h1 class="app-view-title typcn typcn-{{icon}}">{{title}}</h1>
+        </div>
+        <div class="col-md-5">
+          <div class="header-select-box">
+            <form class="form-inline">
+              <div class="form-group">
+                <label class="label-light-color">Change trial:</label>
+                <select class="form-control input-sm">
+                  <option>Empire Rx: Arm Replacement</option>
+                </select>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
       <section class="app-view-subnav">
       </section>
     </header>
@@ -34,285 +49,25 @@
     {% body %}
     
     <section class="app-content-container no-marg-cont">
+      <div class="light-gray-box">
+          
+      </div>
       <section class="row media-view-container">
         
         <h3>{{resourceTitle}}</h3>
         
-        <!-- PDF Template -->
-        <div class="col-md-4">
-          <div class="light-gray-box media-box media-pdf">
-            <div class="row">
-              <div class="col-md-6 media-thumbnail-box">
-                <a href="#">
-                  <div class="thumbnail-img-box empty">
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-6 media-description-box">
-                <span class="media-type pdf typcn typcn-document-text">PDF</span>
-                <h6 class="media-title"><a href="#">Name of Trial document goes here with an extra few lines</a></h6>
-              </div>
-            </div>
-            <a class="btn btn-primary btn-block typcn typcn-download" href="#">Open PDF</a>
-          </div>
-        </div>
+        {{> pdf-template-widget}}
+        
+        {{> video-template-widget}}
+        
+        {{> link-template-widget}}
+        
+        {{> video-template-widget}}
+        
+        {{> pdf-template-widget}}
+        
+        {{> link-template-widget}}
 
-        <!-- Video Template -->
-        <div class="col-md-4">
-          <div class="light-gray-box media-box media-video">
-            <div class="row">
-              <div class="col-md-6 media-thumbnail-box">
-                <a href="#">
-                  <div class="thumbnail-img-box" style="background-image: url(http://placehold.it/156x120)"></div>
-                </a>
-              </div>
-              <div class="col-md-6 media-description-box">
-                <span class="media-type pdf typcn typcn-video">Video</span>
-                <h6 class="media-title"><a href="#">Name of Trial document goes here with an extra few lines</a></h6>
-              </div>
-            </div>
-            <a class="btn btn-primary btn-block typcn typcn-eye" href="#">Watch Video</a>
-          </div>
-        </div>
-
-        <!-- Link Template -->
-        <div class="col-md-4">
-          <div class="light-gray-box media-box media-video">
-            <div class="row">
-              <div class="col-md-6 media-thumbnail-box">
-                <a href="#">
-                  <div class="thumbnail-img-box empty">
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-6 media-description-box">
-                <span class="media-type pdf typcn typcn-link">Link</span>
-                <h6 class="media-title"><a href="#">Name of Trial document goes here with an extra few lines</a></h6>
-              </div>
-            </div>
-            <a class="btn btn-primary btn-block typcn typcn-arrow-forward" href="#">Visit Link</a>
-          </div>
-        </div>
-
-        <!-- PDF Template -->
-        <div class="col-md-4">
-          <div class="light-gray-box media-box media-pdf">
-            <div class="row">
-              <div class="col-md-6 media-thumbnail-box">
-                <a href="#">
-                  <div class="thumbnail-img-box" style="background-image: url(http://placehold.it/156x120)"></div>
-                </a>
-              </div>
-              <div class="col-md-6 media-description-box">
-                <span class="media-type pdf typcn typcn-document-text">PDF</span>
-                <h6 class="media-title"><a href="#">Name of Trial document goes here with an extra few lines</a></h6>
-              </div>
-            </div>
-            <a class="btn btn-primary btn-block typcn typcn-download" href="#">Open PDF</a>
-          </div>
-        </div>
-
-        <!-- Video Template -->
-        <div class="col-md-4">
-          <div class="light-gray-box media-box media-video">
-            <div class="row">
-              <div class="col-md-6 media-thumbnail-box">
-                <a href="#">
-                  <div class="thumbnail-img-box empty">
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-6 media-description-box">
-                <span class="media-type pdf typcn typcn-video">Video</span>
-                <h6 class="media-title"><a href="#">Name of Trial document goes here with an extra few lines</a></h6>
-              </div>
-            </div>
-            <a class="btn btn-primary btn-block typcn typcn-eye" href="#">Watch Video</a>
-          </div>
-        </div>
-
-        <!-- Link Template -->
-        <div class="col-md-4">
-          <div class="light-gray-box media-box media-video">
-            <div class="row">
-              <div class="col-md-6 media-thumbnail-box">
-                <a href="#">
-                  <div class="thumbnail-img-box" style="background-image: url(http://placehold.it/156x120)"></div>
-                </a>
-              </div>
-              <div class="col-md-6 media-description-box">
-                <span class="media-type pdf typcn typcn-link">Link</span>
-                <h6 class="media-title"><a href="#">Name of Trial document goes here with an extra few lines</a></h6>
-              </div>
-            </div>
-            <a class="btn btn-primary btn-block typcn typcn-arrow-forward" href="#">Visit Link</a>
-          </div>
-        </div>
-
-        <!-- PDF Template -->
-        <div class="col-md-4">
-          <div class="light-gray-box media-box media-pdf">
-            <div class="row">
-              <div class="col-md-6 media-thumbnail-box">
-                <a href="#">
-                  <div class="thumbnail-img-box" style="background-image: url(http://placehold.it/156x120)"></div>
-                </a>
-              </div>
-              <div class="col-md-6 media-description-box">
-                <span class="media-type pdf typcn typcn-document-text">PDF</span>
-                <h6 class="media-title"><a href="#">Name of Trial document goes here with an extra few lines</a></h6>
-              </div>
-            </div>
-            <a class="btn btn-primary btn-block typcn typcn-download" href="#">Open PDF</a>
-          </div>
-        </div>
-
-        <!-- Video Template -->
-        <div class="col-md-4">
-          <div class="light-gray-box media-box media-video">
-            <div class="row">
-              <div class="col-md-6 media-thumbnail-box">
-                <a href="#">
-                  <div class="thumbnail-img-box empty">
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-6 media-description-box">
-                <span class="media-type pdf typcn typcn-video">Video</span>
-                <h6 class="media-title"><a href="#">Name of Trial document goes here with an extra few lines</a></h6>
-              </div>
-            </div>
-            <a class="btn btn-primary btn-block typcn typcn-eye" href="#">Watch Video</a>
-          </div>
-        </div>
-
-        <!-- Link Template -->
-        <div class="col-md-4">
-          <div class="light-gray-box media-box media-video">
-            <div class="row">
-              <div class="col-md-6 media-thumbnail-box">
-                <a href="#">
-                  <div class="thumbnail-img-box" style="background-image: url(http://placehold.it/156x120)"></div>
-                </a>
-              </div>
-              <div class="col-md-6 media-description-box">
-                <span class="media-type pdf typcn typcn-link">Link</span>
-                <h6 class="media-title"><a href="#">Name of Trial document goes here with an extra few lines</a></h6>
-              </div>
-            </div>
-            <a class="btn btn-primary btn-block typcn typcn-arrow-forward" href="#">Visit Link</a>
-          </div>
-        </div>
-
-        <!-- PDF Template -->
-        <div class="col-md-4">
-          <div class="light-gray-box media-box media-pdf">
-            <div class="row">
-              <div class="col-md-6 media-thumbnail-box">
-                <a href="#">
-                  <div class="thumbnail-img-box" style="background-image: url(http://placehold.it/156x120)"></div>
-                </a>
-              </div>
-              <div class="col-md-6 media-description-box">
-                <span class="media-type pdf typcn typcn-document-text">PDF</span>
-                <h6 class="media-title"><a href="#">Name of Trial document goes here with an extra few lines</a></h6>
-              </div>
-            </div>
-            <a class="btn btn-primary btn-block typcn typcn-download" href="#">Open PDF</a>
-          </div>
-        </div>
-
-        <!-- Video Template -->
-        <div class="col-md-4">
-          <div class="light-gray-box media-box media-video">
-            <div class="row">
-              <div class="col-md-6 media-thumbnail-box">
-                <a href="#">
-                  <div class="thumbnail-img-box empty">
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-6 media-description-box">
-                <span class="media-type pdf typcn typcn-video">Video</span>
-                <h6 class="media-title"><a href="#">Name of Trial document goes here with an extra few lines</a></h6>
-              </div>
-            </div>
-            <a class="btn btn-primary btn-block typcn typcn-eye" href="#">Watch Video</a>
-          </div>
-        </div>
-
-        <!-- Link Template -->
-        <div class="col-md-4">
-          <div class="light-gray-box media-box media-video">
-            <div class="row">
-              <div class="col-md-6 media-thumbnail-box">
-                <a href="#">
-                  <div class="thumbnail-img-box" style="background-image: url(http://placehold.it/156x120)"></div>
-                </a>
-              </div>
-              <div class="col-md-6 media-description-box">
-                <span class="media-type pdf typcn typcn-link">Link</span>
-                <h6 class="media-title"><a href="#">Name of Trial document goes here with an extra few lines</a></h6>
-              </div>
-            </div>
-            <a class="btn btn-primary btn-block typcn typcn-arrow-forward" href="#">Visit Link</a>
-          </div>
-        </div>
-
-        <!-- PDF Template -->
-        <div class="col-md-4">
-          <div class="light-gray-box media-box media-pdf">
-            <div class="row">
-              <div class="col-md-6 media-thumbnail-box">
-                <a href="#">
-                  <div class="thumbnail-img-box" style="background-image: url(http://placehold.it/156x120)"></div>
-                </a>
-              </div>
-              <div class="col-md-6 media-description-box">
-                <span class="media-type pdf typcn typcn-document-text">PDF</span>
-                <h6 class="media-title"><a href="#">Name of Trial document goes here with an extra few lines</a></h6>
-              </div>
-            </div>
-            <a class="btn btn-primary btn-block typcn typcn-download" href="#">Open PDF</a>
-          </div>
-        </div>
-
-        <!-- Video Template -->
-        <div class="col-md-4">
-          <div class="light-gray-box media-box media-video">
-            <div class="row">
-              <div class="col-md-6 media-thumbnail-box">
-                <a href="#">
-                  <div class="thumbnail-img-box empty">
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-6 media-description-box">
-                <span class="media-type pdf typcn typcn-video">Video</span>
-                <h6 class="media-title"><a href="#">Name of Trial document goes here with an extra few lines</a></h6>
-              </div>
-            </div>
-            <a class="btn btn-primary btn-block typcn typcn-eye" href="#">Watch Video</a>
-          </div>
-        </div>
-
-        <!-- Link Template -->
-        <div class="col-md-4">
-          <div class="light-gray-box media-box media-video">
-            <div class="row">
-              <div class="col-md-6 media-thumbnail-box">
-                <a href="#">
-                  <div class="thumbnail-img-box" style="background-image: url(http://placehold.it/156x120)"></div>
-                </a>
-              </div>
-              <div class="col-md-6 media-description-box">
-                <span class="media-type pdf typcn typcn-link">Link</span>
-                <h6 class="media-title"><a href="#">Name of Trial document goes here with an extra few lines</a></h6>
-              </div>
-            </div>
-            <a class="btn btn-primary btn-block typcn typcn-arrow-forward" href="#">Visit Link</a>
-          </div>
-        </div>
       </section>
     </section>
   </section>

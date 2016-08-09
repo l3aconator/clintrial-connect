@@ -9,36 +9,12 @@ title: 'Dashboard—Empire Rx: Arm Replacement'
       <h1>Good morning, Luke Skywalker!</h1>
       <p>A warm welcome message here about the trial, and the resources that the patient can use for the trial. Here is more writing to fill up the space to get a feel for how much one can write. Lorem ipsum dolor sit amet.</p>
     </div>
-   <div class="col-md-6">
-      <div class="white-box">
-        <h5 class="heading-info">Looks like you have more than one clinical study available! Here’s the trial you are currently viewing:</h5>
-        <div class="row">
-          <div class="col-md-6">
-            logo
-          </div>
-          <div class="col-md-6">
-            
-          <span class="opt-in-choice typcn typcn-warning">You aren't <strong>interested</strong> in this trial</span>
-          <span class="change-trial-heading">Empire Rx: Arm Replacement</span>
-            <form class="form-horizontal form-with-button">
-              <label for="changeTrial">Change Trial:</label>
-              <select class="form-control" name="changeTrial">
-                <option class="current-trial" checked>Empire Rx: Arm Replacement</option>
-                <option>Empire Rx: Lorem ipsum 1</option>
-                <option>Empire Rx: Lorem ipsum 2</option>
-                <option>Empire Rx: Lorem ipsum 3</option>
-                <option>Empire Rx: Lorem ipsum 4</option>
-                <option>Empire Rx: Lorem ipsum 5</option>
-              </select>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
+    
+    {{> trial-details}}
+    
   </div>
-  
   <div class="row main-dashboard-nav">
-    <div class="col-md-6">
+    <div class="col-md-4">
       <a href="{{baseurl}}/pages/dashboard-documents-video.html">
         <div class="dashboard-home-boxes">
           <span class="typcn typcn-lightbulb main-dashboard-nav-display-icon"></span>
@@ -46,7 +22,7 @@ title: 'Dashboard—Empire Rx: Arm Replacement'
         </div>
       </a>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-4">
       <a href="{{baseurl}}/pages/dashboard-share.html">
         <div class="dashboard-home-boxes">
           <span class="typcn typcn-mail main-dashboard-nav-display-icon"></span>
@@ -54,15 +30,13 @@ title: 'Dashboard—Empire Rx: Arm Replacement'
         </div>
       </a>
     </div>
-  </div>
-  
-  <div class="light-gray-box main-dashboard-questions">
-    <h5>Ask your research site…fix</h5>
-    <form class="form-horizontal form-with-button">
-      <div class="form-group">
-        <input class="form-control" type="text" placeholder="Placeholder text example…"/>
-        <input class="btn btn-success" type="submit" />
-      </div>
-    </form>
+    <div class="col-md-4">
+      <a href="{{baseurl}}/pages/dashboard-share.html">
+        <div class="dashboard-home-boxes">
+          <span class="typcn typcn-message main-dashboard-nav-display-icon"></span>
+          <span class="main-dashboard-nav-link typcn-after typcn-chevron-right-after">Research site questions</span>
+        </div>
+      </a>
+    </div>
   </div>
 </section>

@@ -14,3 +14,23 @@
     }
   }
 }
+
+.already-shared-table,
+.trial-list-table {
+  margin-bottom: 0;
+  
+  tr:last-child {
+    
+    td {
+      
+      &:first-child {
+        border-bottom-left-radius: $border-radius-large;
+      }
+      
+       &:last-child {
+        border-bottom-right-radius: $border-radius-large;
+      }
+      
+    }
+  }
+}

@@ -157,10 +157,15 @@
   }
 }
 
-.dashboard-share-box {
+.dashboard-share-box,
+.dashboard-question-box {
   @include content-boxes($padding-base-horizontal, $brand-primary, $border-radius-large, $brand-info);
   margin-top: $padding-xl-vertical;
   margin-bottom: $padding-xl-vertical * 2;
+  
+  h3 {
+    margin-top: 0;
+  }
 }
 
 .table-white-box {

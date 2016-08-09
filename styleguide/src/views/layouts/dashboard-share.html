@@ -24,8 +24,23 @@
   
   <section class="app-content">
     <header class="app-view-header home-icon">
-      <h1 class="app-view-title typcn typcn-{{icon}}">{{title}}</h1>
-      <img class="app-logo" src="{{baseurl}}/assets/toolkit/images/ClinTrialConnect.png" />
+      <div class="row">
+        <div class="col-md-7">
+          <h1 class="app-view-title typcn typcn-{{icon}}">{{title}}</h1>
+        </div>
+        <div class="col-md-5">
+          <div class="header-select-box">
+            <form class="form-inline">
+              <div class="form-group">
+                <label class="label-light-color">Change trial:</label>
+                <select class="form-control input-sm">
+                  <option>Empire Rx: Arm Replacement</option>
+                </select>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
       <section class="app-view-subnav">
       </section>
     </header>

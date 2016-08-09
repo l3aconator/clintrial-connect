@@ -10,42 +10,23 @@ icon: mail
       <h1>Share resources with friends and family</h1>
       <p>You have the ability to share all of the content within this tool to friends, family, loved ones, well really anyone you want to know about this particular clinical trial. It’s important for others to know what is going on and encourage you to share it. Simply enter their name and email. They will recieve access to the same educational resources you have.</p>
     </div>
-   <div class="col-md-6">
-      <div class="white-box">
-        <h5 class="heading-info">Looks like you have more than one clinical study available! Here’s the trial you are currently viewing:</h5>
-        <div class="row">
-          <div class="col-md-6">
-            logo
-          </div>
-          <div class="col-md-6">
-            
-          <span class="opt-in-choice typcn typcn-warning">You aren't <strong>interested</strong> in this trial</span>
-          <span class="change-trial-heading">Empire Rx: Arm Replacement</span>
-            <form class="form-horizontal form-with-button">
-              <label for="changeTrial">Change Trial:</label>
-              <select class="form-control" name="changeTrial">
-                <option class="current-trial" checked>Empire Rx: Arm Replacement</option>
-                <option>Empire Rx: Lorem ipsum 1</option>
-                <option>Empire Rx: Lorem ipsum 2</option>
-                <option>Empire Rx: Lorem ipsum 3</option>
-                <option>Empire Rx: Lorem ipsum 4</option>
-                <option>Empire Rx: Lorem ipsum 5</option>
-              </select>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
+   {{> trial-details}}
   </div>
   
   <section class="dashboard-share-form">
     <div class="dashboard-share-box">
       <h3 class="text-white">Share content</h3>
-      <form>
+      <form method="" action="">
         <label class="label-white-color">Email you wish to share with</label>
-        <input class="form-control input-lg" type="email" placeholder="Enter email…" />
-        <input class="btn btn-success" type="submt" value="share" />
-        <button class="btn btn-danger">Clear form</button>
+        <div class="row">
+          <div class="col-md-9">
+            <input class="form-control input-lg" type="email" placeholder="Enter email…" />
+          </div>
+          <div class="col-md-3">
+            <input class="btn btn-success btn-lg btn-block typcn typcn-mail" type="submt" value="share" />
+          </div>
+        </div>
+        
       </form>
     </div>
   </section>
@@ -101,15 +82,13 @@ icon: mail
     
     </div>
   </section>
-  
-  
-  
+
 </section>
 
 <!--IGNORE, FAKING ACTIVE PAGE SELECTION-->
 <script>
   $(document).ready(function(){
     $('.sidebar-nav-list a').removeClass('active');
-    $('.sidebar-nav-list li:nth-child(5) a').addClass('active');
+    $('.sidebar-nav-list li:nth-child(3) a').addClass('active');
   });
 </script>

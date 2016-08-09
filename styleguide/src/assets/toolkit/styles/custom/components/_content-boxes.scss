@@ -142,6 +142,15 @@
       }
     }
   }
+  
+  .media-category {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    display: block;
+    padding-top: $padding-large-vertical;
+    color: $brand-dark;
+  }
 
   .media-type {
     color: $gray-base;

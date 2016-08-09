@@ -26,3 +26,11 @@ $('#forgotPasswordModal').on('shown.bs.modal', function () {
 $('#forgotUsernameModal').on('shown.bs.modal', function () {
 
 });
+
+$('.js-filter-item').on('click', function(){
+  var categoryType = $(this).data('category');
+  $('.js-filter-item').removeClass('active');
+  $(this, '.js-filter-item').addClass('active');
+  $('.media-filter').fadeOut('fast');
+  $('.' + categoryType).fadeIn('fast');
+  });

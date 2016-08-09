@@ -50,11 +50,18 @@
     
     <section class="app-content-container no-marg-cont">
       <div class="light-gray-box">
-          
+        <h3>{{resourceTitle}}</h3>
+        <h5>Category filters</h5>
+        <div class="btn-group">
+          <button class="btn btn-primary btn-xs js-filter-item active" data-category="col-md-4">Show all</button>
+          <button class="btn btn-primary btn-xs js-filter-item" data-category="test2">How trials work</button>
+          <button class="btn btn-primary btn-xs js-filter-item" data-category="test">About disease</button>
+          <button class="btn btn-primary btn-xs js-filter-item" data-category="test3">About sponsor</button>
+          <button class="btn btn-primary btn-xs js-filter-item" data-category="test4">About drug</button>
+          <button class="btn btn-primary btn-xs js-filter-item" data-category="test4">About study</button>
+        </div>
       </div>
       <section class="row media-view-container">
-        
-        <h3>{{resourceTitle}}</h3>
         
         {{> pdf-template-widget}}
         

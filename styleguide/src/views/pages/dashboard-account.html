@@ -5,6 +5,50 @@ icon: user
 ---
 
 <section class="app-content-container account-dashboard">
+  <section class="trial-list">
+    
+    <h3>Trial list</h3>
+    
+    <div class="table-white-box">
+      <table class="table table-striped table-responsive trial-list-table">
+        <thead class="dark">
+          <th class="trial-name">Trial name</th>
+          <th class="site-name">Site name</th>
+          <th class="trial-status">Trial status</th>
+          <th class="patient-interest">Your interest</th>
+        </thead>
+        <tbody>
+          <tr class="already-shared-row">
+            <td class="trial-name">Lorem ipsum trial name</td>
+            <td class="site-name">Lorem ipsum site name</td>
+            <td class="trial-status">Open for enrollment</td>
+            <td class="patient-interest">
+              <button class="btn btn-success btn-xs typcn typcn-tick" data-toggle="modal" data-target="#joinModal">I'm interested</button>
+              <button class="btn btn-warning btn-xs typcn typcn-times" data-toggle="modal" data-target="#declineModal">I'm not interested</button>
+            </td>
+          </tr>
+          <tr class="already-shared-row">
+            <td class="trial-name">Lorem ipsum trial name</td>
+            <td class="site-name">Lorem ipsum site name</td>
+            <td class="trial-status">Open for enrollment</td>
+            <td class="patient-interest">
+              <span class="typcn typcn-warning not-interested">Not interested in trial</span>
+            </td>
+          </tr>
+          <tr class="already-shared-row">
+            <td class="trial-name">Lorem ipsum trial name</td>
+            <td class="site-name">Lorem ipsum site name</td>
+            <td class="trial-status">Closed for enrollment</td>
+            <td class="patient-interest">
+              <span class="typcn typcn-tick interested">Interested in trial</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    
+    </div>
+  </section>
+  
   <fieldset>
     <form>
       
@@ -13,7 +57,7 @@ icon: user
       <div class="row">
         <div class="col-md-6">
           <div class="form-group">
-            <label>Name</label>
+            <label>Name or Nickname</label>
             <input class="form-control" type="text" value="Luke Skywalker" />
           </div>
         </div>
@@ -422,50 +466,6 @@ icon: user
       
     </form>
   </fieldset>
-  
- <section class="trial-list">
-    
-    <h3>Trial list</h3>
-    
-    <div class="table-white-box">
-      <table class="table table-striped table-responsive trial-list-table">
-        <thead class="dark">
-          <th class="trial-name">Trial name</th>
-          <th class="site-name">Site name</th>
-          <th class="trial-status">Trial status</th>
-          <th class="patient-interest">Your interest</th>
-        </thead>
-        <tbody>
-          <tr class="already-shared-row">
-            <td class="trial-name">Lorem ipsum trial name</td>
-            <td class="site-name">Lorem ipsum site name</td>
-            <td class="trial-status">Open for enrollment</td>
-            <td class="patient-interest">
-              <button class="btn btn-success btn-xs typcn typcn-tick" data-toggle="modal" data-target="#joinModal">I'm interested</button>
-              <button class="btn btn-warning btn-xs typcn typcn-times" data-toggle="modal" data-target="#declineModal">I'm not interested</button>
-            </td>
-          </tr>
-          <tr class="already-shared-row">
-            <td class="trial-name">Lorem ipsum trial name</td>
-            <td class="site-name">Lorem ipsum site name</td>
-            <td class="trial-status">Open for enrollment</td>
-            <td class="patient-interest">
-              <span class="typcn typcn-warning not-interested">Not interested in trial</span>
-            </td>
-          </tr>
-          <tr class="already-shared-row">
-            <td class="trial-name">Lorem ipsum trial name</td>
-            <td class="site-name">Lorem ipsum site name</td>
-            <td class="trial-status">Closed for enrollment</td>
-            <td class="patient-interest">
-              <span class="typcn typcn-tick interested">Interested in trial</span>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    
-    </div>
-  </section>
   
 </section>
 

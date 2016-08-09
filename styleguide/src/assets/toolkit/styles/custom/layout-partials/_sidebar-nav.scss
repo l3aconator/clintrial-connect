@@ -171,6 +171,10 @@
         transition: $default-transition;
         font-size: 14px;
         
+        .sidebar-nav-list-last-line {
+          padding-left: 28px;
+        }
+        
         &:hover,
         &:focus,
         &:active,

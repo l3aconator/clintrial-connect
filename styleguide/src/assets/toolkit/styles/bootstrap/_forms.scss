@@ -248,7 +248,7 @@ input[type="search"] {
         border: 1px solid $brand-danger;
         box-shadow: $btn-danger-shadow;
         position: absolute;
-        top: 0;
+        top: 2px;
         left: 0;
         font-family: 'typicons';
         font-style: normal;
@@ -262,10 +262,11 @@ input[type="search"] {
         font-smoothing: antialiased;
         text-rendering: optimizeLegibility;
         margin-right: $padding-xs-horizontal;
-        content: '\e122'; /* '' */
+        content: ''; /* '' */
         color: $brand-danger;
         transition: $default-transition;
         box-shadow: $form-inset-color;
+        line-height: 1.4em;
       }
     }
     

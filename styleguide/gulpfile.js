@@ -28,6 +28,11 @@ const config = {
       dest: 'dist/assets/toolkit/styles',
       watch: 'src/assets/toolkit/styles/**/*.scss',
     },
+    bootstrap: {
+      src: 'src/assets/toolkit/styles/bootstrap.scss',
+      dest: 'dist/assets/toolkit/styles',
+      watch: 'src/assets/toolkit/styles/**/*.scss',
+    },
   },
   scripts: {
     fabricator: {
@@ -87,7 +92,18 @@ gulp.task('styles:toolkit', () => {
   .pipe(gulpif(config.dev, reload({ stream: true })));
 });
 
-gulp.task('styles', ['styles:fabricator', 'styles:toolkit']);
+gulp.task('styles:bootstrap', () => {
+  gulp.src(config.styles.bootstrap.src)
+  .pipe(sass({
+    includePaths: './node_modules',
+  }).on('error', sass.logError))
+  .pipe(prefix('last 1 version'))
+  .pipe(gulpif(!config.dev, csso()))
+  .pipe(gulp.dest(config.styles.bootstrap.dest))
+  .pipe(gulpif(config.dev, reload({ stream: true })));
+});
+
+gulp.task('styles', ['styles:fabricator', 'styles:toolkit', 'styles:bootstrap']);
 
 
 // scripts

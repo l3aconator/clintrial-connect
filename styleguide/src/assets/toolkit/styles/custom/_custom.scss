@@ -4,6 +4,9 @@
 // Custom Mixins
 @import "custom-mixins";
 
+//Boostrap Mixins
+@import "bootstrap/mixins";
+
 // Components
 @import "components/content-boxes";
 @import "components/forms";
@@ -13,6 +16,7 @@
 
 // Typography
 @import "typography/headings";
+@import "typography/type-overrides";
 
 // Iconography
 @import "iconography/iconography";

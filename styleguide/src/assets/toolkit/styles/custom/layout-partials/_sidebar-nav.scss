@@ -213,4 +213,27 @@
     }
   }
   
+  .sidebar-nav-change-interest {
+    button {
+      padding: 0;
+      color: white;
+      font-size: 13px;
+    }
+    
+    .sidebar-nav-trial-interest {
+      font-size: 16px;
+      color: white;
+      
+      .not-interested {
+        color: $brand-warning;
+        font-style: italic;
+      }
+      
+      .interested {
+        color: $brand-success;
+        font-style: italic;
+      }
+    }
+    
+  }
 }

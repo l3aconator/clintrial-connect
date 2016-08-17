@@ -2,13 +2,8 @@
  * Toolkit styles
  */
 
-body {
-  font-family: sans-serif;
-}
-
-
-// Load Bootstrap
-@import "bootstrap";
+// Load Bootstrap variables
+@import "bootstrap/variables";
 
 // Load Typicons
 @import "typicons/typicons";

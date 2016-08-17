@@ -1,0 +1,43 @@
+.form-validation-box {
+  display: block;
+  &.has-failure {
+    @include content-boxes($padding-large-vertical, #EFA6A6, $border-radius-large, $brand-danger);
+    box-shadow: $btn-danger-shadow;
+    
+    ul {
+      margin: 0;
+      padding: 0;
+      font-weight: bold;
+      
+      li {
+        list-style-type: none;
+        display: block;
+        margin-left: 40px;
+        position: relative;
+        margin-bottom: 5px;
+        font-size: 14px;
+        
+         &:before {
+          font-family: 'typicons';
+          font-style: normal;
+          font-weight: normal;
+          speak: none;
+          display: inline-block;
+          text-decoration: inherit;
+          width: 1em;
+          height: 1em;
+          -webkit-font-smoothing: antialiased;
+          font-smoothing: antialiased;
+          text-rendering: optimizeLegibility;
+          content: '\e137'; /* '' */
+          position: absolute;
+          color: $brand-danger;
+          left: -25px;
+          top: -8px;
+          font-size: 1.5em;
+        }
+        
+      }
+    }
+  }
+}

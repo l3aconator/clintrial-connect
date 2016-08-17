@@ -67,7 +67,6 @@
 
     .company-logo {
       width: 100%;
-      margin-bottom: $padding-large-vertical;
     }
   }
 }
@@ -83,3 +82,9 @@
     margin-right: $padding-base-horizontal;
   }
 }
+
+@media (max-width: $screen-md) {
+  .app-content {
+    margin-left: $side-bar-width/2;
+  }
+} 

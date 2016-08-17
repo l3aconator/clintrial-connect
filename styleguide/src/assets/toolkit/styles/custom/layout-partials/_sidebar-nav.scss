@@ -237,3 +237,9 @@
     
   }
 }
+
+@media (max-width: $screen-md) {
+  .sidebar-nav {
+    width: $side-bar-width/2;
+  }
+} 

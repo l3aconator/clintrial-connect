@@ -27,6 +27,11 @@ $('#forgotUsernameModal').on('shown.bs.modal', function () {
 
 });
 
+// forgotUsernameModal
+$('#contactModal').on('shown.bs.modal', function () {
+
+});
+
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })

@@ -11,6 +11,7 @@
   <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
   
   <!-- toolkit styles -->
+  <link rel="stylesheet" href="{{baseurl}}/assets/toolkit/styles/bootstrap.css">
   <link rel="stylesheet" href="{{baseurl}}/assets/toolkit/styles/toolkit.css">
   <!-- /toolkit styles -->
 
@@ -27,10 +28,22 @@
           <fieldset>
             <form method="get" action="{{baseurl}}/pages/dashboard-main.html">
               
+              <div class="form-validation-box has-failure">
+                <ul>
+                  <li>Invalid login attempt</li>
+                  <li>The Email field is not a valid e-mail address.</li>
+                  <li>The Password field is required.</li>
+                </ul>
+              </div>
+              
               <div class="form-group">
                 <label class="control-label label-light-color" for="">Email</label>
                 <input class="form-control" type="email" placeholder="Enter your email…"/>
               </div>
+              
+              <span class="form-validation-box has-failure">
+                <span id="#">lorem ispum</span>
+              </span>
               
               <div class="form-group">
                 <label class="control-label label-light-color" for="">Password</label>
@@ -67,12 +80,6 @@
         </div>
       </div>
       
-      <div class="registration-form-box">
-        <div class="registration-form">
-          <h4>Need to register?</h4>
-          <a class="btn btn-primary btn-block typcn-after typcn-chevron-right-after" href="{{baseurl}}/pages/dashboard-register.html">Register now</a>
-        </div>
-      </div>
     </div>
   </section>
   

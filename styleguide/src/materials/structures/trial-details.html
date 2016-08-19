@@ -4,21 +4,18 @@
       <div class="col-md-6">
         <div class="trial-details">
           <div class="trial-details-logo">
-            <a href="http://www.amgen.com/" target="_blank">
-              <img class="company-logo" src="{{baseurl}}/assets/toolkit/images/amgen-logo.jpg" alt="" />
-            </a>
-          </div> 
+            <img class="company-logo" src="{{baseurl}}/assets/toolkit/images/amgen-logo.jpg" alt="" />
+          </div>
+          <!--Show change in status-->
+          <h6 class="text-gray">Trial is <span class="open">OPEN</span> for enrollment.</h6>
           <span class="not-interested typcn typcn-warning">Not interested in this trial</span>
           <span class="change-trial-heading">Empire Rx: Arm Replacement&mdash;Site name</span>
-          <br />
-          <span class="study-is-for">This study is for cancer lorem ipsum dolor data.</span>
-          <br />
-          <p><small><strong>Trial sponsored by <a href="http://www.amgen.com/" target="_blank">Amgen</a></strong></small></p>
+          <span class="study-is-for">This trial is for <span>{cancer lorem ipsum dolor data.}</span></span>
         </div>
       </div>
       <div class="col-md-6">
         <div class="site-details">
-          <h5 class="heading-info">This study is brought to you by:</h5>
+          <h5 class="heading-info">This trial is brought to you by:</h5>
           <address class="site-address">
             <span class="site-name typcn typcn-location"><strong>Lorem ipsum site name</strong></span>
             <br />
@@ -31,14 +28,14 @@
             <span class="site-address-country">U.S.A</span>
             <br />
             <br />
-            <span class="site-contact-name typcn typcn-contacts"><strong>Jane Doe</strong></span>
-            <br />
-            <span class="site-contact-role">Trial Supervisor</span>
-            <br />
-            <span class="site-contact-phone"> <a href="tel:(503)123-1234">(503)123-1234</a></span>
           </address>
+          <div class="">
+            <button class="btn btn-info btn-block" data-toggle="modal" data-target="#contactModal">Contact Site</button>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+{{> contact-modal}}

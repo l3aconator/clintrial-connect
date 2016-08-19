@@ -11,7 +11,6 @@ const rename = require('gulp-rename');
 const reload = browserSync.reload;
 const runSequence = require('run-sequence');
 const sass = require('gulp-sass');
-const sourcemaps = require('gulp-sourcemaps');
 const webpack = require('webpack');
 
 // configuration
@@ -26,6 +25,11 @@ const config = {
     },
     toolkit: {
       src: 'src/assets/toolkit/styles/toolkit.scss',
+      dest: 'dist/assets/toolkit/styles',
+      watch: 'src/assets/toolkit/styles/**/*.scss',
+    },
+    bootstrap: {
+      src: 'src/assets/toolkit/styles/bootstrap.scss',
       dest: 'dist/assets/toolkit/styles',
       watch: 'src/assets/toolkit/styles/**/*.scss',
     },
@@ -69,30 +73,37 @@ gulp.task('clean', del.bind(null, [config.dest]));
 // styles
 gulp.task('styles:fabricator', () => {
   gulp.src(config.styles.fabricator.src)
-  .pipe(sourcemaps.init())
   .pipe(sass().on('error', sass.logError))
   .pipe(prefix('last 1 version'))
   .pipe(gulpif(!config.dev, csso()))
   .pipe(rename('f.css'))
-  .pipe(sourcemaps.write())
   .pipe(gulp.dest(config.styles.fabricator.dest))
   .pipe(gulpif(config.dev, reload({ stream: true })));
 });
 
 gulp.task('styles:toolkit', () => {
   gulp.src(config.styles.toolkit.src)
-  .pipe(gulpif(config.dev, sourcemaps.init()))
   .pipe(sass({
     includePaths: './node_modules',
   }).on('error', sass.logError))
   .pipe(prefix('last 1 version'))
   .pipe(gulpif(!config.dev, csso()))
-  .pipe(gulpif(config.dev, sourcemaps.write()))
   .pipe(gulp.dest(config.styles.toolkit.dest))
   .pipe(gulpif(config.dev, reload({ stream: true })));
 });
 
-gulp.task('styles', ['styles:fabricator', 'styles:toolkit']);
+gulp.task('styles:bootstrap', () => {
+  gulp.src(config.styles.bootstrap.src)
+  .pipe(sass({
+    includePaths: './node_modules',
+  }).on('error', sass.logError))
+  .pipe(prefix('last 1 version'))
+  .pipe(gulpif(!config.dev, csso()))
+  .pipe(gulp.dest(config.styles.bootstrap.dest))
+  .pipe(gulpif(config.dev, reload({ stream: true })));
+});
+
+gulp.task('styles', ['styles:fabricator', 'styles:toolkit', 'styles:bootstrap']);
 
 
 // scripts

@@ -56,6 +56,7 @@ h6, .h6 { font-size: $font-size-h6; }
 
 p {
   margin: 0 0 ($line-height-computed / 2);
+  letter-spacing: .025em;
 }
 
 .lead {
@@ -102,16 +103,6 @@ mark,
   color: $text-muted;
 }
 
-@include text-emphasis-variant('.text-primary', $brand-primary);
-
-@include text-emphasis-variant('.text-success', $state-success-text);
-
-@include text-emphasis-variant('.text-info', $state-info-text);
-
-@include text-emphasis-variant('.text-warning', $state-warning-text);
-
-@include text-emphasis-variant('.text-danger', $state-danger-text);
-
 // Color change
 
 .text-white {
@@ -126,16 +117,6 @@ mark,
   // automatically.
   color: #fff;
 }
-@include bg-variant('.bg-primary', $brand-primary);
-
-@include bg-variant('.bg-success', $state-success-bg);
-
-@include bg-variant('.bg-info', $state-info-bg);
-
-@include bg-variant('.bg-warning', $state-warning-bg);
-
-@include bg-variant('.bg-danger', $state-danger-bg);
-
 
 // Page header
 // -------------------------

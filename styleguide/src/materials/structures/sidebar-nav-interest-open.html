@@ -1,0 +1,70 @@
+<section class="sidebar-nav">
+  <div class="sidebar-account-header">
+    <div class="sidebar-nav-trial-buttons sidebar-nav-pad">
+      <img class="app-logo" src="{{baseurl}}/assets/toolkit/images/ClinTrialConnect.png" />
+    </div>
+    <span class="account-name"><a href="{{baseurl}}/pages/dashboard-account.html">Luke Skywalker</a></span>
+    <a href="{{baseurl}}/pages/dashboard-login.html" class="account-logout typcn-after typcn-chevron-right-after">Log out</a>
+  </div>
+  
+  <hr />
+
+  <div class="sidebar-profile">
+    <h4 class="sidebar-nav-label">Account</h4>
+     <ul class="sidebar-nav-list">
+      <li><a class="typcn typcn-user" href="{{baseurl}}/pages/dashboard-account.html" >Your account</a></li>
+    </ul>
+  </div>
+
+  <hr />
+
+  <nav>
+    <h4 class="sidebar-nav-label">Navigation</h4>
+    <ul class="sidebar-nav-list">
+      <li><a class="active typcn typcn-home" href="" >Dashboard</a></li>
+      <li><a class="typcn typcn-lightbulb" href="">Documents &amp; videos</a></li>
+      <li><a class="typcn typcn-mail" href="">Share with family</a></li>
+      <li><a class="typcn typcn-message" href="">Ask a question to<br /><span class="sidebar-nav-list-last-line site-name">site name</span></a></li>
+    </ul>
+
+    <hr />
+  </nav>
+  
+  <!--OPEN AND NOT INTERESTED-->
+  <div class="sidebar-nav-pad sidebar-nav-change-interest">
+    <!--should change based on status-->
+    <h6 class="text-gray">Trial is <span class="open">OPEN</span> for enrollment.</h6>
+    <!--should change based on interest-->
+    <p class="sidebar-nav-trial-interest">You are <span class="not-interested">not interested</span> in this trial.</p>
+    <button class="btn btn-link typcn-after typcn-chevron-right-after" data-toggle="modal" data-target="#joinModal">Change to interested</button>
+  </div>
+  
+  <!--OPEN AND INTERESTED-->
+  <div class="sidebar-nav-pad sidebar-nav-change-interest">
+    <!--should change based on status-->
+    <h6 class="text-gray">Trial is <span class="open">OPEN</span> for enrollment.</h6>
+    <!--should change based on interest-->
+    <p class="sidebar-nav-trial-interest">You are <span class="interested">interested</span> in this trial.</p>
+    <button class="btn btn-link typcn-after typcn-chevron-right-after" data-toggle="modal" data-target="#declineModal">Change to not interested</button>
+  </div>
+  
+  <!--CLOSED AND NOT INTERESTED-->
+  <div class="sidebar-nav-pad sidebar-nav-change-interest">
+    <!--should change based on status-->
+    <h6 class="text-gray">Trial is <span class="closed">CLOSED</span> for enrollment.</h6>
+    <!--should change based on interest-->
+    <p class="sidebar-nav-trial-interest">You are <span class="not-interested">not interested</span> in this trial.</p>
+    <!--remove button IF CLOSED-->
+  </div>
+  
+  <!--OPEN AND INTERESTED-->
+  <div class="sidebar-nav-pad sidebar-nav-change-interest">
+    <h6 class="text-gray">Trial is <span class="closed">CLOSED</span> for enrollment.</h6>
+    <p class="sidebar-nav-trial-interest">You are <span class="interested">interested</span> in this trial.</p>
+    <!--remove button IF CLOSED-->
+  </div>
+  
+</section>
+
+{{> join-modal}}
+{{> decline-modal}}

@@ -1,0 +1,19 @@
+<mj-section background-color="#ffffff">
+  <mj-column>
+    <mj-text>
+      "Name or Nickname" would like to share a clinical trial with you and they are considering.
+    </mj-text>
+    <mj-text>
+    <strong>You may access the clinical trial details by clicking the special web link below:</strong>
+      <ul>
+        <li><a href="#" target="_blank" style="color: #00BFFB;">{{link}}</a></li>
+      </ul>
+    </mj-text>
+    <mj-text>
+    Thank you,
+    <br />
+    <br />
+    ClinTrialConnect and {siteName}
+    </mj-text>
+  </mj-column>
+</mj-section>

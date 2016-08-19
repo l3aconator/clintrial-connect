@@ -1,0 +1,7 @@
+<mj-section background-color="#07587C" mj-class="radius">
+  <mj-column>
+    <mj-text color="#ffffff" align="center">
+      <h1 style="line-height: 30px;">“Sponsor Name” invites you to “Protocol Number”</h1>
+    </mj-text>
+  </mj-column>
+</mj-section>

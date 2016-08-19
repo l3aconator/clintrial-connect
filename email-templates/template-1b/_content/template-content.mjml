@@ -1,0 +1,23 @@
+<mj-section background-color="#ffffff">
+  <mj-column>
+    <mj-text>
+      Dear Patient,
+    </mj-text>
+    <mj-text>
+      This is an email from “Site Name” regarding “Study Title”. This study had been added to your available studies in your <a href="http://www.ClinTrialConnect.com" style="color: #00BFFB;">www.ClinTrialConnect.com</a> account.
+    </mj-text>
+    <mj-text>
+    <strong>To securely access this new clinical trial, please follow the link below to login to your account:</strong>
+      <ol>
+        <li>Click this link: <a href="#" style="color: #00BFFB;">{{link}}</a></li>
+        <li>Login to access your study dashboard and access all the digital content for this study.</li>
+      </ol>
+    </mj-text>
+    <mj-text>
+    Thank you,
+    <br />
+    <br />
+    ClinTrialConnect and {siteName}
+    </mj-text>
+  </mj-column>
+</mj-section>

@@ -1,0 +1,21 @@
+<mj-section background-color="#ffffff">
+  <mj-column>
+    <mj-text>
+      Your patient “name or nickname” has asked the following question:
+    </mj-text>
+    <mj-text>
+      LOREM IPSUM LANGUAGE
+    </mj-text>
+    <mj-text>
+      To respond to the patient, please click reply (it inserts the patients email”. The information that you respond with will not be visible to ClinTrialConnect. (Kyle, please insert language about HPI.
+    </mj-text>
+    <mj-text>
+    Thank you,
+    <br />
+    <br />
+    ClinTrialApp Support Team
+    <br />
+    <a href="https://www.clintrialconnect.com" style="color: #00BFFB;">www.ClinTrialConnect.com</a>
+    </mj-text>
+  </mj-column>
+</mj-section>

@@ -1,6 +1,6 @@
 <mjml>
   <mj-head>
-    <mj-title>Base Template</mj-title>
+    <mj-title>Important clinical study information from “Site Name”</mj-title>
     <mj-font name="Monserrat" href="https://fonts.googleapis.com/css?family=Montserrat" />
     <mj-attributes>
       <mj-class name="footer-color" color="#07587C" />
@@ -15,11 +15,11 @@
       <!--END LOGO HEADER-->
 
       <!--HEADER-->
-        <mj-include path="./base-template/_content/header.mjml" />
+        <mj-include path="./template-1b/_content/header.mjml" />
       <!--END HEADER-->
 
       <!--CONTENT-->
-        <mj-include path="./base-template/_content/template-content.mjml" />
+        <mj-include path="./template-1b/_content/template-content.mjml" />
       <!--END CONTENT-->
 
       <!--FOOTER-->

@@ -1,0 +1,29 @@
+<mj-section background-color="#ffffff">
+  <mj-column>
+    <mj-text>
+      Dear “Site Name”,
+    </mj-text>
+    <mj-text>
+      Intercept Pharmaceuticals has selected to utilize ClinTrialConnect for “Protocol Number"
+      <br />
+      <br />
+      ClinTrialConnect is a smartphone app that allows you to share IRB approved information with your patients directly from your smartphone. The IRB approved content that is shared with patients is a comprehensive packet of information, always kept current by the sponsor.
+    </mj-text>
+    <mj-text>
+    <strong>Setup is easy and takes only a few moments:</strong>
+      <ol>
+        <li>Click <a href="#" target="_blank" style="color: #00BFFB;">HERE</a> to setup your account.</li>
+        <li>Download the App (it's free) from <a href="#" target="_blank" style="color: #00BFFB;">Apple App Store</a> or <a href="#" target="_blank" style="color: #00BFFB;">Google Play</a>.</li>
+        <li>Once downloaded, login to the App on your device and you're to share content with your patients.</li>
+      </ol>
+      You may also access the content from your Web Browser at <a href="#" style="color: #00BFFB;">{{link}}</a>
+    </mj-text>
+    <mj-text>
+    Thank you,
+    <br />
+    <br />
+    ClinTrialApp Support Team
+    <a href="https://www.clintrialconnect.com" style="color: #00BFFB;">www.ClinTrialConnect.com</a>
+    </mj-text>
+  </mj-column>
+</mj-section>

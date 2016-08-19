@@ -1,0 +1,56 @@
+<mjml>
+  <mj-head>
+    <mj-title>Base Template</mj-title>
+    <mj-font name="Raleway" href="https://fonts.googleapis.com/css?family=Montserrat" />
+    <mj-attributes>
+      <mj-class name="radius" border-radius="15px" />
+      <mj-class name="footer-color" color="#07587C" />
+      <mj-all font-family="Montserrat" />
+    </mj-attributes>
+  </mj-head>
+  <mj-body>
+    <mj-container background-color="#051E2B" >
+
+      <!--LOGO HEADER-->
+        <mj-include path="./_layout-partials/logo.mjml" /> <!-- or 'header.mjml' -->
+      <!--END LOGO HEADER-->
+
+      <!--HEADER-->
+        <mj-include path="./_layout-partials/header.mjml" /> <!-- or 'header.mjml' -->
+      <!--END HEADER-->
+
+      <!--CONTENT-->
+      <mj-section background-color="#ffffff" mj-class="radius">
+        <mj-column>
+          <mj-text>
+            Dear Patient,
+          </mj-text>
+          <mj-text>
+            This is an email from {siteName} regarding {studyTitle}.
+            This email provides a link to our partnered website www.ClinTrialConnect.com which provide access to information about what clinical studies, information about this particular study and specific documents. You may also ask specific questions to {siteName} through this study dashboard.
+          </mj-text>
+          <mj-text>
+          <strong>To securely access the information, please follow these three steps:</strong>
+            <ol>
+              <li>Click this link: <a href="#" target="_blank" style="color: #00BFFB;">www.clintrialconnect.com/patients</a></li>
+              <li>Register and answer the few basic questions</li>
+              <li>Login to access your study dashboard and access all the digital content for this study.</li>
+            </ol>
+          </mj-text>
+          <mj-text>
+          Thank you,
+          <br />
+          <br />
+          ClinTrialConnect and {siteName}
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <!--END CONTENT-->
+
+      <!--FOOTER-->
+        <mj-include path="./_layout-partials/footer.mjml" /> <!-- or 'header.mjml' -->
+      <!--END FOOTER-->
+
+    </mj-container>
+  </mj-body>
+</mjml>

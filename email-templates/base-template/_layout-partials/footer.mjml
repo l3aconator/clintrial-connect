@@ -1,0 +1,7 @@
+<mj-section>
+  <mj-column>
+    <mj-text align="center" mj-class="footer-color">
+      <small>&copy; 2016—ClinTrial, LLC  •  <a href="#" target="_blank" style="color: #00BFFB;">Privacy Policy</a></small>
+    </mj-text>
+  </mj-column>
+</mj-section>

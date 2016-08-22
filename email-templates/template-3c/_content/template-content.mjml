@@ -1,13 +1,13 @@
 <mj-section background-color="#ffffff">
   <mj-column>
     <mj-text>
-      You’re invited to access the digital dashboard for ClinTrialConnect for protocol “Protocol Number”
+      You’re invited to access the ClinTrialConnect digital dashboard for protocol “Protocol Number”
     </mj-text>
     <mj-text>
     <strong>Setup is easy and takes only a few moments to access your account:</strong>
       <ol>
-        <li>Click <a href="#" target="_blank" style="color: #00BFFB;">HERE</a> to login to your account.</li>
-        <li>Login and access to access your digital dashboard for “Protocol Number”</li>
+        <li>Click <a href="#" target="_blank" style="color: #00BFFB;">HERE</a> to log in to your account.</li>
+        <li>Access your digital dashboard for “Protocol Number”</li>
       </ol>
     </mj-text>
     <mj-text>

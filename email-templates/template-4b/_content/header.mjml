@@ -1,7 +1,7 @@
 <mj-section background-color="#07587C" mj-class="radius">
   <mj-column>
     <mj-text color="#ffffff" align="center">
-      <h1 style="line-height: 30px;">Friendly reminder: “Name or Nickname" would like to share information with you about a clinical trial</h1>
+      <h2 style="line-height: 150%">Friendly reminder: “Name or Nickname" would like to share information with you about a clinical trial</h2>
     </mj-text>
   </mj-column>
 </mj-section>

@@ -50,3 +50,41 @@ gulp.task('build', function () {
     .pipe(mjml())
     .pipe(gulp.dest('./template-5a/'))
 });
+
+gulp.task('export', function () {
+  gulp.src('./base-template/base-template.html')
+    .pipe(gulp.dest('./export/'))
+
+  gulp.src('./template-1a/template-1a.html')
+    .pipe(gulp.dest('./export/'))
+
+  gulp.src('./template-1b/template-1b.html')
+    .pipe(gulp.dest('./export/'))
+
+  gulp.src('./template-1c/template-1c.html')
+    .pipe(gulp.dest('./export/'))
+
+  gulp.src('./template-1d/template-1d.html')
+    .pipe(gulp.dest('./export/'))
+
+  gulp.src('./template-2a/template-2a.html')
+    .pipe(gulp.dest('./export/'))
+
+  gulp.src('./template-2b/template-2b.html')
+    .pipe(gulp.dest('./export/'))
+
+  gulp.src('./template-3b/template-3b.html')
+    .pipe(gulp.dest('./export/'))
+
+  gulp.src('./template-3c/template-3c.html')
+    .pipe(gulp.dest('./export/'))
+
+  gulp.src('./template-4a/template-4a.html')
+    .pipe(gulp.dest('./export/'))
+
+  gulp.src('./template-4b/template-4b.html')
+    .pipe(gulp.dest('./export/'))
+
+  gulp.src('./template-5a/template-5a.html')
+    .pipe(gulp.dest('./export/'))
+});

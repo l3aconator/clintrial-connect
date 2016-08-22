@@ -3,11 +3,19 @@
     <mj-text>
       Your patient “name or nickname” has asked the following question:
     </mj-text>
+
+    <!--QUESTION-->
     <mj-text>
-      LOREM IPSUM LANGUAGE
+      <span style="display: block; width: 100%; background-color: #F2F8FB; border-radius: 15px; border: 1px solid #BFC5C8">
+        <p style="padding: 20px;">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec nibh auctor, tincidunt ex quis, consequat mauris. Phasellus laoreet massa vel nunc semper, ut ullamcorper massa fringilla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse facilisis dui enim. In pellentesque cursus metus, ut blandit tortor pretium a. Phasellus molestie facilisis massa et imperdiet. Pellentesque mauris velit, suscipit id elit non, tempus fermentum enim. Morbi tristique ultricies elementum. Etiam viverra lacus vitae dui mattis pellentesque. Nullam non felis in purus vulputate cursus.
+        </p>
+      </span>
     </mj-text>
+    <!--END QUESTION-->
+
     <mj-text>
-      To respond to the patient, please click reply (it inserts the patients email”. The information that you respond with will not be visible to ClinTrialConnect. (Kyle, please insert language about HPI.
+      To respond to the patient, please click reply within your email program or email your response to "patients email." The information that you respond with will not be visible to ClinTrialConnect. Please note this information is being sent over the Internet through unsecured email, including confidential health information is not protected.
     </mj-text>
     <mj-text>
     Thank you,
@@ -16,6 +24,16 @@
     ClinTrialApp Support Team
     <br />
     <a href="https://www.clintrialconnect.com" style="color: #00BFFB;">www.ClinTrialConnect.com</a>
+    </mj-text>
+  </mj-column>
+</mj-section>
+
+<mj-section background-color="#000512">
+  <mj-column>
+    <mj-text font-size="13px" color="white">
+      <span style="font-style: italic">
+      The information contained in this transmission may contain privileged and confidential information, including patient information protected by federal and state privacy laws. It is intended only for the use of the person(s) named above. If you are not the intended recipient, you are hereby notified that any review, dissemination, distribution, or duplication of this communication is strictly prohibited. If you are not the intended recipient, please contact the sender by reply email and destroy all copies of the original message.
+    </span>
     </mj-text>
   </mj-column>
 </mj-section>

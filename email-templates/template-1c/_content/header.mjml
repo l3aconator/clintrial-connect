@@ -1,7 +1,7 @@
 <mj-section background-color="#07587C" mj-class="radius">
   <mj-column>
     <mj-text color="#ffffff" align="center">
-      <h1 style="line-height: 30px;">Final Reminder: Important clinical study information from “Site Name”</h1>
+      <h2 style="line-height: 150%">Final Reminder: Important clinical study information from “Site Name”</h2>
     </mj-text>
   </mj-column>
 </mj-section>

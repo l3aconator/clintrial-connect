@@ -1,5 +1,8 @@
 <mj-section>
   <mj-column>
+    <mj-text align="center" color="white">
+      <small><address>ClinTrialConnect | 1515 Wynkoop St. , Suite 360 | Denver, CO 80202 | United States</address</small>
+    </mj-text>
     <mj-text align="center" mj-class="footer-color">
       <small>&copy; 2016—ClinTrial, LLC  •  <a href="http://clintrialconnect-patient.azurewebsites.net/pages/dashboard-policy.html" target="_blank" style="color: #00BFFB; text-decoration: none;">Privacy Policy</a></small>
     </mj-text>

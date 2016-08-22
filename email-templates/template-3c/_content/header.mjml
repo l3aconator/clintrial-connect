@@ -1,7 +1,7 @@
 <mj-section background-color="#07587C" mj-class="radius">
   <mj-column>
     <mj-text color="#ffffff" align="center">
-      <h1 style="line-height: 30px;">Important Reminder: ClinTrialConnect invites to “Protocol Number”</h1>
+      <h2 style="line-height: 150%">Important Reminder: ClinTrialConnect invites to “Protocol Number”</h2>
     </mj-text>
   </mj-column>
 </mj-section>

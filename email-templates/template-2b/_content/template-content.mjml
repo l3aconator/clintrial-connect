@@ -7,14 +7,16 @@
       This is a friendly reminder that {{Sponsorname}} has selected to utilize ClinTrialConnect for “Protocol Number"
       <br />
       <br />
-      ClinTrialConnect is a web application that allows you to share IRB approved information with your patients directly from an easy-to-use web portal. The IRB approved content that is shared with patients is a comprehensive packet of information, always kept current by the sponsor.
+      ClinTrialConnect is a mobile application that allows you to share IRB approved information with your patients directly from an easy-to-use smartphone app. The IRB approved content that is shared with patients is a comprehensive packet of information, always kept current by the sponsor.
     </mj-text>
     <mj-text>
     <strong>Setup is easy and takes only a few moments:</strong>
       <ol>
-        <li>Click <a href="#" target="_blank" style="color: #00BFFB;">HERE</a> to setup your account.</li>
+        <li>Click <a href="#" style="color: #00BFFB;">HERE</a> to setup your account.</li>
+        <li>Download the app (it's free) from <a href="#" style="color: #00BFFB;">Apple App Store</a> or <a href="#" style="color: #00BFFB;">Google Play</a>.</li>
         <li>Log in to the app and you're ready to share content with your patients.</li>
       </ol>
+      <p>You may also access the content from your web browser <a href="#" style="color: #00BFFB;">here</a></p>
     </mj-text>
     <mj-text>
     Thank you,
